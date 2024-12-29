@@ -8,7 +8,7 @@ const HeroSection = () => {
         position: 'relative',
         width: '100%',
         height: '80vh',
-        backgroundImage: 'url("/images/wild-water-lily.jpg")',
+        backgroundImage: 'url("https://plus.unsplash.com/premium_photo-1723485760056-2b4f59326d6c?q=80&w=1827&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: 'white',

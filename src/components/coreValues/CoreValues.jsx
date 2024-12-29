@@ -14,7 +14,7 @@ const CoreValues = () => {
       <Grid container spacing={4} sx={{ mt: 6 }} justifyContent="center">
         <Grid item xs={12} sm={6} md={3}>
           <Paper sx={{ p: 4, textAlign: 'center' }}>
-            <img src="/images/inclusivity-icon.png" alt="Inclusivity" style={{ width: '60px', height: '60px' }} />
+            <img src="https://latinbusinesstoday.com/wp-content/uploads/2023/06/June-Is-Inclusivity-Month-What-It-Means-for-Us-scaled-e1686057366542.jpeg" alt="Inclusivity" style={{ width: '250px', height: '200px' }} />
             <Typography variant="h6" sx={{ fontWeight: 'bold', mt: 2 }}>
               Inclusivity
             </Typography>
@@ -25,7 +25,7 @@ const CoreValues = () => {
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
           <Paper sx={{ p: 4, textAlign: 'center' }}>
-            <img src="/images/equity-icon.png" alt="Equity" style={{ width: '60px', height: '60px' }} />
+            <img src="https://media.cnn.com/api/v1/images/stellar/prod/200529125702-20200529-racial-unity-gfx.jpg?q=x_0,y_0,h_619,w_1100,c_fill/h_653,w_1160/f_webp" alt="Equity" style={{ width: '250px', height: '200px'}} />
             <Typography variant="h6" sx={{ fontWeight: 'bold', mt: 2 }}>
               Equity
             </Typography>
@@ -36,7 +36,7 @@ const CoreValues = () => {
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
           <Paper sx={{ p: 4, textAlign: 'center' }}>
-            <img src="/images/justice-icon.png" alt="Social Justice" style={{ width: '60px', height: '60px' }} />
+            <img src="https://th.bing.com/th/id/OIP.on6og54NuAS-vFWNo05ikgHaHa?rs=1&pid=ImgDetMain" alt="Social Justice" style={{ width: '250px', height: '200px' }} />
             <Typography variant="h6" sx={{ fontWeight: 'bold', mt: 2 }}>
               Social Justice
             </Typography>
@@ -47,7 +47,7 @@ const CoreValues = () => {
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
           <Paper sx={{ p: 4, textAlign: 'center' }}>
-            <img src="/images/nature-icon.png" alt="Nature" style={{ width: '60px', height: '60px' }} />
+            <img src="https://th.bing.com/th/id/OIP.R9SEALIC3vQ5i_b_ydR2owHaDv?rs=1&pid=ImgDetMain" alt="Nature" style={{width: '250px', height: '200px' }} />
             <Typography variant="h6" sx={{ fontWeight: 'bold', mt: 2 }}>
               Harmony with Nature
             </Typography>
