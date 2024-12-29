@@ -13,6 +13,7 @@ export default function Navbar() {
   const logoSrc = "/images/navbar/fulkoka-logo.png";
 
   const menuItems = [
+    { name: 'Home', link: '/' },,
     { name: 'About Us', link: '/about' },
     {
       name: 'Programs', 
@@ -23,9 +24,9 @@ export default function Navbar() {
         { name: 'Environmental Programs', link: '/programs/environmental' },
       ]
     },
-    { name: 'News & Media', link: '/news' },
+    { name: 'News & Media', link: '/news-media' },
     { name: 'Get Involved', link: '/get-involved' },
-    { name: 'Donate', link: '/donate' },
+    { name: 'Donate', link: '/get-involved/donate' },
     { name: 'Contact Us', link: '/contact' },
   ];
 
