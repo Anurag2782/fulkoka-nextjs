@@ -18,11 +18,11 @@ export default function Navbar() {
     {
       name: 'Programs', 
       link: '/programs', 
-      subMenu: [
-        { name: 'Health Programs', link: '/programs/health' },
-        { name: 'Education Programs', link: '/programs/education' },
-        { name: 'Environmental Programs', link: '/programs/environmental' },
-      ]
+      // subMenu: [
+      //   { name: 'Health Programs', link: '/programs/health' },
+      //   { name: 'Education Programs', link: '/programs/education' },
+      //   { name: 'Environmental Programs', link: '/programs/environmental' },
+      // ]
     },
     { name: 'News & Media', link: '/news-media' },
     { name: 'Get Involved', link: '/get-involved' },
