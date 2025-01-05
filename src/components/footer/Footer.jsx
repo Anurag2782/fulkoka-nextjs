@@ -35,7 +35,7 @@ const Footer = () => {
               <Link href="/get-involved" sx={{ display: 'block', color: 'white', textDecoration: 'none', mb: 1, fontSize: '14px', '&:hover': { textDecoration: 'underline' } }}>
                 Get Involved
               </Link>
-              <Link href="/donate" sx={{ display: 'block', color: 'white', textDecoration: 'none', mb: 1, fontSize: '14px', '&:hover': { textDecoration: 'underline' } }}>
+              <Link href="/get-involved/donate" sx={{ display: 'block', color: 'white', textDecoration: 'none', mb: 1, fontSize: '14px', '&:hover': { textDecoration: 'underline' } }}>
                 Donate
               </Link>
               <Link href="/contact" sx={{ display: 'block', color: 'white', textDecoration: 'none', mb: 1, fontSize: '14px', '&:hover': { textDecoration: 'underline' } }}>
@@ -48,27 +48,36 @@ const Footer = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>Contact Us</Typography>
             <Box sx={{ mb: 2 }}>
-              <Typography sx={{ fontSize: '14px' }}>Email: contact@fulkoka.org</Typography>
+              <Typography sx={{ fontSize: '14px' }}>Email: fulkokango@gmail.com</Typography>
               <Typography sx={{ fontSize: '14px' }}>Phone: +123-456-7890</Typography>
-              <Typography sx={{ mt: 1, fontSize: '14px' }}>Address: 123 NGO St, City, Country</Typography>
+              <Typography sx={{ mt: 1, fontSize: '14px' }}>Address: Balbhadrapur, Navtol, Laheriasarai, Darbhanga, Bihar-846001</Typography>
             </Box>
             <Box>
-              <Typography variant="h6" sx={{ mb: 1, fontWeight: 'bold' }}>Follow Us</Typography>
-              <Box>
-                <IconButton color="inherit" sx={{ mr: 1, '&:hover': { color: '#F4C542' } }}>
-                  <Facebook />
-                </IconButton>
-                <IconButton color="inherit" sx={{ mr: 1, '&:hover': { color: '#1DA1F2' } }}>
-                  <Twitter />
-                </IconButton>
-                <IconButton color="inherit" sx={{ mr: 1, '&:hover': { color: '#0077b5' } }}>
-                  <LinkedIn />
-                </IconButton>
-                <IconButton color="inherit" sx={{ '&:hover': { color: '#E1306C' } }}>
-                  <Instagram />
-                </IconButton>
-              </Box>
-            </Box>
+  <Typography variant="h6" sx={{ mb: 1, fontWeight: 'bold' }}>Follow Us</Typography>
+  <Box>
+    <Link href="https://www.facebook.com/yourPage" target="_blank" sx={{ mr: 1, '&:hover': { color: '#F4C542' } }}>
+      <IconButton sx={{ fontSize: '24px', color: 'white', '&:hover': { color: '#F4C542' } }}>
+        <Facebook />
+      </IconButton>
+    </Link>
+    <Link href="https://twitter.com/yourHandle" target="_blank" sx={{ mr: 1, '&:hover': { color: '#1DA1F2' } }}>
+      <IconButton sx={{ fontSize: '24px', color: 'white', '&:hover': { color: '#1DA1F2' } }}>
+        <Twitter />
+      </IconButton>
+    </Link>
+    <Link href="https://www.linkedin.com/company/yourCompany" target="_blank" sx={{ mr: 1, '&:hover': { color: '#0077b5' } }}>
+      <IconButton sx={{ fontSize: '24px', color: 'white', '&:hover': { color: '#0077b5' } }}>
+        <LinkedIn />
+      </IconButton>
+    </Link>
+    <Link href="https://www.instagram.com/yourHandle" target="_blank" sx={{ '&:hover': { color: '#E1306C' } }}>
+      <IconButton sx={{ fontSize: '24px', color: 'white', '&:hover': { color: '#E1306C' } }}>
+        <Instagram />
+      </IconButton>
+    </Link>
+  </Box>
+</Box>
+
           </Grid>
 
           {/* Newsletter Signup */}

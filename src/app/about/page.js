@@ -171,7 +171,7 @@ const AboutUs = () => {
                 style={{ width: '150px', height: '150px', borderRadius: '50%' }}
               />
               <Typography variant="h6" sx={{ mt: 2 }}>Dr. Sriram Subrahmanyan Swamy</Typography>
-              <Typography variant="body2" sx={{ color: '#777' }}>Director</Typography>
+              <Typography variant="body2" sx={{ color: '#777' }}>Director & Co-Founder</Typography>
               <Typography variant="body2" sx={{ color: '#555', mt: 1 }}>
                 Dr. Sriram brings decades of experience in public health to Fulkoka’s initiatives, ensuring effective and impactful programming.
               </Typography>

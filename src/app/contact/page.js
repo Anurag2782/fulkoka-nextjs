@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Box, Typography, Grid, TextField, Button, Container, Paper, Divider, Stack, IconButton } from '@mui/material';
-import { Facebook, Twitter, LinkedIn, Instagram } from '@mui/icons-material';
+import { Facebook, Twitter, LinkedIn, Instagram, Phone, Map } from '@mui/icons-material';
 
 const ContactUsPage = () => {
   const [formData, setFormData] = useState({
@@ -120,92 +120,107 @@ const ContactUsPage = () => {
       </Box>
 
       {/* Contact Information Section */}
-      <Box sx={{ mb: 6 }}>
-        <Typography variant="h4" sx={{ fontWeight: '500', mb: 4, textAlign: 'center', color: '#333' }}>
-          Our Contact Information
+      {/* Contact Information Section */}
+<Box sx={{ mb: 6 }}>
+  <Typography variant="h4" sx={{ fontWeight: '500', mb: 4, textAlign: 'center', color: '#333' }}>
+    Get In Touch
+  </Typography>
+  <Grid container spacing={4} sx={{ display: 'flex', alignItems: 'stretch' }}>
+    <Grid item xs={12} sm={4}>
+      <Paper sx={{
+        padding: 3, textAlign: 'center', boxShadow: 1, borderRadius: '8px', height: '100%',
+        backgroundColor: '#E0F7FA', '&:hover': { transform: 'scale(1.05)', transition: 'transform 0.3s' }
+      }}>
+        <Facebook sx={{ fontSize: 40, color: '#1A73E8' }} />
+        <Typography variant="h6" sx={{ fontWeight: '600', color: '#1A73E8' }}>
+          Email
         </Typography>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={4}>
-            <Paper sx={{ padding: 3, textAlign: 'center', boxShadow: 1, borderRadius: '8px' }}>
-              <Typography variant="h6" sx={{ fontWeight: '600', color: '#1A73E8' }}>
-                Email
-              </Typography>
-              <Typography variant="body1" sx={{ color: '#555', mt: 2 }}>
-                contact@fulkoka.org
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Paper sx={{ padding: 3, textAlign: 'center', boxShadow: 1, borderRadius: '8px' }}>
-              <Typography variant="h6" sx={{ fontWeight: '600', color: '#1A73E8' }}>
-                Phone
-              </Typography>
-              <Typography variant="body1" sx={{ color: '#555', mt: 2 }}>
-                +123-456-7890
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Paper sx={{ padding: 3, textAlign: 'center', boxShadow: 1, borderRadius: '8px' }}>
-              <Typography variant="h6" sx={{ fontWeight: '600', color: '#1A73E8' }}>
-                Address
-              </Typography>
-              <Typography variant="body1" sx={{ color: '#555', mt: 2 }}>
-                123 NGO St, City, Country
-              </Typography>
-            </Paper>
-          </Grid>
-        </Grid>
-      </Box>
+        <Typography variant="body1" sx={{ color: '#555', mt: 2 }}>
+          fulkokango@gmail.com
+        </Typography>
+      </Paper>
+    </Grid>
+    <Grid item xs={12} sm={4}>
+      <Paper sx={{
+        padding: 3, textAlign: 'center', boxShadow: 1, borderRadius: '8px', height: '100%',
+        backgroundColor: '#FFEBEE', '&:hover': { transform: 'scale(1.05)', transition: 'transform 0.3s' }
+      }}>
+        <Phone sx={{ fontSize: 40, color: '#1A73E8' }} />
+        <Typography variant="h6" sx={{ fontWeight: '600', color: '#1A73E8' }}>
+          Phone
+        </Typography>
+        <Typography variant="body1" sx={{ color: '#555', mt: 2 }}>
+          +123-456-7890
+        </Typography>
+      </Paper>
+    </Grid>
+    <Grid item xs={12} sm={4}>
+      <Paper sx={{
+        padding: 3, textAlign: 'center', boxShadow: 1, borderRadius: '8px', height: '100%',
+        backgroundColor: '#FFF3E0', '&:hover': { transform: 'scale(1.05)', transition: 'transform 0.3s' }
+      }}>
+        <Map sx={{ fontSize: 40, color: '#1A73E8' }} />
+        <Typography variant="h6" sx={{ fontWeight: '600', color: '#1A73E8' }}>
+          Address
+        </Typography>
+        <Typography variant="body1" sx={{ color: '#555', mt: 2 }}>
+          Balbhadrapur, Navtol, Laheriasarai, Darbhanga, Bihar-846001
+        </Typography>
+      </Paper>
+    </Grid>
+  </Grid>
+</Box>
+
 
       {/* Social Media Section */}
-      <Box sx={{ mb: 6, textAlign: 'center' }}>
-        <Typography variant="h4" sx={{ fontWeight: '500', mb: 4, color: '#333' }}>
-          Follow Us
-        </Typography>
-        <Stack direction="row" spacing={3} justifyContent="center" sx={{backgroundColor: '#f5f5f5', p : 2}}>
-          <IconButton
-            color="primary"
-            sx={{
-              backgroundColor: '#3b5998',
-              '&:hover': { backgroundColor: '#1A73E8' },
-              padding: '10px',
-            }}
-          >
-            <Facebook fontSize="large" />
-          </IconButton>
-          <IconButton
-            color="primary"
-            sx={{
-              backgroundColor: '#00acee',
-              '&:hover': { backgroundColor: '#1A73E8' },
-              padding: '10px',
-            }}
-          >
-            <Twitter fontSize="large" />
-          </IconButton>
-          <IconButton
-            color="primary"
-            sx={{
-              backgroundColor: '#0e76a8',
-              '&:hover': { backgroundColor: '#1A73E8' },
-              padding: '10px',
-            }}
-          >
-            <LinkedIn fontSize="large" />
-          </IconButton>
-          <IconButton
-            color="primary"
-            sx={{
-              backgroundColor: '#C13584',
-              '&:hover': { backgroundColor: '#1A73E8' },
-              padding: '10px',
-            }}
-          >
-            <Instagram fontSize="large" />
-          </IconButton>
-        </Stack>
-      </Box>
+      {/* Follow Us Section */}
+<Box sx={{ mb: 6, textAlign: 'center', backgroundColor: '#F5F5F5', padding: 4, borderRadius: '8px' }}>
+  <Typography variant="h5" sx={{ fontWeight: '600', color: '#333', mb: 4 }}>
+    Stay Connected
+  </Typography>
+  <Typography variant="body1" sx={{ color: '#777', mb: 4 }}>
+    Follow us on social media to stay updated with the latest news and updates.
+  </Typography>
+  <Stack direction="row" spacing={4} justifyContent="center">
+    <IconButton
+      color="primary"
+      sx={{
+        backgroundColor: '#E1F5FE', borderRadius: '50%', padding: '12px',
+        '&:hover': { backgroundColor: '#B3E5FC', transform: 'scale(1.05)', transition: 'transform 0.2s ease' }
+      }}
+    >
+      <Facebook fontSize="large" sx={{ color: '#4267B2' }} />
+    </IconButton>
+    <IconButton
+      color="primary"
+      sx={{
+        backgroundColor: '#E1F5FE', borderRadius: '50%', padding: '12px',
+        '&:hover': { backgroundColor: '#B3E5FC', transform: 'scale(1.05)', transition: 'transform 0.2s ease' }
+      }}
+    >
+      <Twitter fontSize="large" sx={{ color: '#1DA1F2' }} />
+    </IconButton>
+    <IconButton
+      color="primary"
+      sx={{
+        backgroundColor: '#E1F5FE', borderRadius: '50%', padding: '12px',
+        '&:hover': { backgroundColor: '#B3E5FC', transform: 'scale(1.05)', transition: 'transform 0.2s ease' }
+      }}
+    >
+      <LinkedIn fontSize="large" sx={{ color: '#0077B5' }} />
+    </IconButton>
+    <IconButton
+      color="primary"
+      sx={{
+        backgroundColor: '#E1F5FE', borderRadius: '50%', padding: '12px',
+        '&:hover': { backgroundColor: '#B3E5FC', transform: 'scale(1.05)', transition: 'transform 0.2s ease' }
+      }}
+    >
+      <Instagram fontSize="large" sx={{ color: '#C13584' }} />
+    </IconButton>
+  </Stack>
+</Box>
+
 
       {/* Footer Section */}
       <Divider sx={{ mb: 6 }} />
