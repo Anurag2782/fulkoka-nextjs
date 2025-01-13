@@ -1,237 +1,137 @@
-import { Box, Typography, Grid, Button } from '@mui/material';
+import React from 'react';
+import { Box, Grid, Typography, Paper, Card, CardMedia, CardContent, Button, Divider } from '@mui/material';
+import { FaSeedling, FaHandshake, FaHeart } from 'react-icons/fa';
 
 const GetInvolved = () => {
+  const involvementOptions = [
+    {
+      title: 'Volunteer with Us',
+      description: 'Lend your skills and time to help us organize events, run campaigns, and empower communities in need.',
+      image: 'https://www.disabilityscot.org.uk/wp-content/uploads/2022/09/volwithusnarrow.jpg',
+      icon: <FaHandshake />,
+      buttonText: 'Learn More',
+      buttonLink: '/get-involved/volunteer',
+    },
+    {
+      title: 'Make a Donation',
+      description: 'Your generous contributions fuel our mission to provide education, healthcare, and other critical services.',
+      image: 'https://th.bing.com/th/id/OIP.y85FJQ1i1v6iCLxomlZzjgHaHa?rs=1&pid=ImgDetMain',
+      icon: <FaHeart />,
+      buttonText: 'Donate Now',
+      buttonLink: '/get-involved/donate',
+    },
+    {
+      title: 'Partner with Us',
+      description: 'Collaborate with us as a corporate or community partner and help expand our reach and impact.',
+      image: 'https://cdn-icons-png.flaticon.com/512/6533/6533065.png',
+      icon: <FaSeedling />,
+      buttonText: 'Partner Now',
+      buttonLink: '/get-involved/partner',
+    },
+  ];
+
   return (
-    <Box sx={{ py: 6, backgroundColor: '#eef3f7', px: { xs: 2, sm: 4, md: 6 } }}>
+    <Box sx={{ px: 4, py: 3,mb:3 }}>
+      {/* Section Title */}
       <Typography
         variant="h4"
-        align="center"
-        gutterBottom
         sx={{
-          fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' },
+          textAlign: 'center',
           fontWeight: 'bold',
-          color: '#333',
+          fontFamily: 'Montserrat',
+          fontSize: { xs: '2rem', md: '2.8rem' },
+          color: '#3B173B',
         }}
       >
         Get Involved
       </Typography>
+
+      {/* Section Description */}
       <Typography
         variant="body1"
-        align="center"
         sx={{
-          mb: 4,
-          fontSize: { xs: '0.9rem', sm: '1rem' },
-          color: '#555',
-          px: { xs: 2, sm: 6 },
+          textAlign: 'center',
+          mt: 0,
+          maxWidth: '800px',
+          mx: 'auto',
+          fontFamily: 'Poppins',
+          color: '#4A4A4A',
+          fontSize: { xs: '1rem', md: '1.2rem' },
+          lineHeight: '1.8',
         }}
       >
         Join us in making a difference! Whether it’s volunteering your time, contributing financially, or simply spreading awareness, every action matters. Together, we can build a brighter future.
       </Typography>
-      <Grid container spacing={4} justifyContent="center" alignItems="stretch">
-        {/* Volunteer Card */}
-        <Grid item xs={12} sm={6} md={4}>
-          <Box
-            sx={{
-              border: '1px solid #ddd',
-              borderRadius: 2,
-              padding: { xs: 3, sm: 4 },
-              backgroundColor: '#fff',
-              textAlign: 'center',
-              height: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-              '&:hover': {
-                transform: 'scale(1.05)',
-                boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
-              },
-            }}
-          >
-            <Box
-              component="img"
-              src="https://www.disabilityscot.org.uk/wp-content/uploads/2022/09/volwithusnarrow.jpg"
-              alt="Volunteer"
-              sx={{
-                width: '50%',
-                borderRadius: '8px',
-                mb: 2,
-                objectFit: 'cover',
-                maxHeight: '150px',
-                mx:"auto"
-              }}
-            />
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: { xs: '1rem', sm: '1.2rem' },
-                fontWeight: 'bold',
-                color: '#1a73e8',
-              }}
-            >
-              Volunteer with Us
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                marginTop: 2,
-                fontSize: { xs: '0.85rem', sm: '1rem' },
-                color: '#555',
-              }}
-            >
-              Lend your skills and time to help us organize events, run campaigns, and empower communities in need.
-            </Typography>
-            <Button
-              href="/get-involved/volunteer"
-              variant="contained"
-              color="primary"
-              sx={{
-                marginTop: 3,
-                fontSize: { xs: '0.8rem', sm: '1rem' },
-                padding: { xs: '6px 12px', sm: '8px 16px' },
-              }}
-            >
-              Learn More
-            </Button>
-          </Box>
-        </Grid>
 
-        {/* Donate Card */}
-        <Grid item xs={12} sm={6} md={4}>
-          <Box
-            sx={{
-              border: '1px solid #ddd',
-              borderRadius: 2,
-              padding: { xs: 3, sm: 4 },
-              backgroundColor: '#fff',
-              textAlign: 'center',
-              height: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-              '&:hover': {
-                transform: 'scale(1.05)',
-                boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
-              },
-            }}
-          >
-            <Box
-              component="img"
-              src='https://th.bing.com/th/id/OIP.y85FJQ1i1v6iCLxomlZzjgHaHa?rs=1&pid=ImgDetMain'
-              alt="Donate"
-              sx={{
-                width: '40%',
-                borderRadius: '8px',
-                mb: 2,
-                objectFit: 'cover',
-                maxHeight: '150px',
-                mx:"auto"
-              }}
-            />
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: { xs: '1rem', sm: '1.2rem' },
-                fontWeight: 'bold',
-                color: '#1a73e8',
-              }}
-            >
-              Make a Donation
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                marginTop: 2,
-                fontSize: { xs: '0.85rem', sm: '1rem' },
-                color: '#555',
-              }}
-            >
-              Your generous contributions fuel our mission to provide education, healthcare, and other critical services.
-            </Typography>
-            <Button
-              href="/get-involved/donate"
-              variant="contained"
-              color="primary"
-              sx={{
-                marginTop: 3,
-                fontSize: { xs: '0.8rem', sm: '1rem' },
-                padding: { xs: '6px 12px', sm: '8px 16px' },
-              }}
-            >
-              Donate Now
-            </Button>
-          </Box>
-        </Grid>
-
-        {/* Partner Card */}
-        <Grid item xs={12} sm={6} md={4}>
-          <Box
-            sx={{
-              border: '1px solid #ddd',
-              borderRadius: 2,
-              padding: { xs: 3, sm: 4 },
-              backgroundColor: '#fff',
-              textAlign: 'center',
-              height: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-              '&:hover': {
-                transform: 'scale(1.05)',
-                boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
-              },
-            }}
-          >
-            <Box
-              component="img"
-              src="https://cdn-icons-png.flaticon.com/512/6533/6533065.png"
-              alt="Partner"
-              sx={{
-                width: '35%',
-                borderRadius: '8px',
-                mb: 2,
-                objectFit: 'cover',
-                maxHeight: '150px',
-                mx:"auto"
-              }}
-            />
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: { xs: '1rem', sm: '1.2rem' },
-                fontWeight: 'bold',
-                color: '#1a73e8',
-              }}
-            >
-              Partner with Us
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                marginTop: 2,
-                fontSize: { xs: '0.85rem', sm: '1rem' },
-                color: '#555',
-              }}
-            >
-              Collaborate with us as a corporate or community partner and help expand our reach and impact.
-            </Typography>
-            <Button
-              href="/get-involved/partner"
-              variant="contained"
-              color="primary"
-              sx={{
-                marginTop: 3,
-                fontSize: { xs: '0.8rem', sm: '1rem' },
-                padding: { xs: '6px 12px', sm: '8px 16px' },
-              }}
-            >
-              Partner Now
-            </Button>
-          </Box>
-        </Grid>
+      {/* Grid of Get Involved Options */}
+      <Grid container spacing={4} sx={{ mt: 0 }} justifyContent="center">
+        {involvementOptions.map((option, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <Paper sx={{ p: 4, textAlign: 'center', backgroundColor: '#FFF8F0', borderRadius: '8px' }}>
+              {/* Image */}
+              <Card sx={{ my: 2 ,
+                    // height : "auto",
+                    borderRadius: '8px',
+                    objectFit: 'cover',
+                    maxHeight: {xs : 'auto',md :'150px'},
+                    mx: 'auto',
+                    backgroundColor:"#FFF",}}>
+                <CardMedia
+                  component="img"
+                  height="150"
+                  image={option.image}
+                  alt={option.title}
+                  sx={{
+                    width: {xs : "60%",md :'40%'},
+                    // height : "auto",
+                    borderRadius: '8px',
+                    objectFit: 'cover',
+                    maxHeight: {xs : 'auto',md :'150px'},
+                    mx: 'auto',
+                    backgroundColor:"#FFF",
+                  }}
+                />
+                
+              </Card>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 'bold',
+                  fontFamily: 'Montserrat',
+                  color: '#3B173B',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                {option.icon} {option.title}
+              </Typography>
+              <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Poppins', color: '#4A4A4A' }}>
+                {option.description}
+              </Typography>
+              
+              {/* Button */}
+              <Box sx={{ mt: 2 }}>
+                <Button
+                  href={option.buttonLink}
+                  variant="contained"
+                  color="primary"
+                  sx={{
+                    fontSize: { xs: '0.8rem', sm: '1rem' },
+                    padding: { xs: '6px 12px', sm: '8px 16px' },
+                    fontWeight: 'bold',
+                    backgroundColor: '#3B173B',
+                  }}
+                >
+                  {option.buttonText}
+                </Button>
+              </Box>
+            </Paper>
+          </Grid>
+        ))}
       </Grid>
+
+      {/* <Divider sx={{ borderColor: '#F6B83A', my: 6 }} />  */}
     </Box>
   );
 };

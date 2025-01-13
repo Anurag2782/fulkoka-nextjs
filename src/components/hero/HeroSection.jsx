@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
+import { FaLeaf } from 'react-icons/fa'; // Icon for visual enhancement
 
 const HeroSection = () => {
   return (
@@ -13,8 +14,10 @@ const HeroSection = () => {
         backgroundPosition: 'center',
         color: 'white',
         textAlign: 'center',
+        borderRadius: '10px',
       }}
     >
+      {/* Overlay for better text visibility */}
       <Box
         sx={{
           position: 'absolute',
@@ -22,9 +25,11 @@ const HeroSection = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Dark overlay for contrast
         }}
       />
+      
+      {/* Content Container */}
       <Box
         sx={{
           position: 'relative',
@@ -36,12 +41,30 @@ const HeroSection = () => {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h3" sx={{ fontWeight: 'bold' }}>
+        <Typography
+          variant="h3"
+          sx={{
+            fontWeight: 'bold',
+            fontFamily: 'Montserrat', // Updated font family
+            fontSize: { xs: '2.2rem', md: '3.5rem' },
+            color: '#FFF', // Ensured good contrast with background
+          }}
+        >
           About Us
         </Typography>
-        <Typography variant="h5" sx={{ mt: 2 }}>
+        
+        <Typography
+          variant="h5"
+          sx={{
+            mt: 2,
+            fontFamily: 'Poppins', // Updated font family
+            color: '#E0E0E0', // Lighter color for the subheading
+            fontSize: { xs: '1.2rem', md: '1.5rem' },
+          }}
+        >
           Empowering communities for a healthier and sustainable future.
         </Typography>
+
         <Button
           href="#mission"
           sx={{
@@ -51,12 +74,15 @@ const HeroSection = () => {
             backgroundColor: '#1A73E8',
             color: 'white',
             borderRadius: 20,
+            fontFamily: 'Poppins', // Updated font family
+            fontSize: '1rem',
+            fontWeight: 'bold',
             '&:hover': {
               backgroundColor: '#1769aa',
             },
           }}
         >
-          Learn More
+          <FaLeaf style={{ marginRight: '8px' }} /> Learn More
         </Button>
       </Box>
     </Box>

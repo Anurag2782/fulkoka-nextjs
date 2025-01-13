@@ -17,7 +17,7 @@ const ContactUsPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    
     console.log(formData);
   };
 
@@ -172,8 +172,7 @@ const ContactUsPage = () => {
 </Box>
 
 
-      {/* Social Media Section */}
-      {/* Follow Us Section */}
+      
 <Box sx={{ mb: 6, textAlign: 'center', backgroundColor: '#F5F5F5', padding: 4, borderRadius: '8px' }}>
   <Typography variant="h5" sx={{ fontWeight: '600', color: '#333', mb: 4 }}>
     Stay Connected

@@ -19,7 +19,7 @@ export default function Home() {
     <CoreValues />
     <CurrentInitiatives />
     <GetInvolved />
-    <Testimonials />
+    {/* <Testimonials /> */}
     </>
   );
 }
