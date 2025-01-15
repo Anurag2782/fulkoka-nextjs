@@ -122,7 +122,7 @@ const DonatePage = () => {
 
             {/* Submit Button */}
             <Grid item xs={12} sx={{ textAlign: 'center' }}>
-              <Link href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" passHref>
+              <Link href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" >
                 <Button
                   type="submit"
                   variant="contained"
