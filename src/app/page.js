@@ -1,3 +1,5 @@
+"use client"
+
 import AboutUsContent from "@/components/aboutUs/AboutUsContent";
 import CoreValues from "@/components/coreValues/CoreValues";
 import CurrentInitiatives from "@/components/currentInitiatives/CurrentInitiatives";

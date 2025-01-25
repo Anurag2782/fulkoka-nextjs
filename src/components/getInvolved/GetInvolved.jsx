@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { Box, Grid, Typography, Paper, Card, CardMedia, CardContent, Button, Divider } from '@mui/material';
 import { FaSeedling, FaHandshake, FaHeart } from 'react-icons/fa';

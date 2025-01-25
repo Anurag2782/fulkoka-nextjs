@@ -47,7 +47,7 @@ const Footer = () => {
                 }}
               >
                 <img
-                  src="/images/navbar/fulkoka-logo.png"
+                  src="/images/navbar/Fulkoka-logo.png"
                   alt="Fulkoka Logo"
                   style={{ width: "80%", height: "80%" }} // Adjust size to fit within the background
                 />

@@ -1,3 +1,6 @@
+
+"use client"
+
 import React from 'react';
 import { Box, Grid, Typography, Paper, Card, CardMedia, CardContent, Divider,Button } from '@mui/material';
 import { FaSeedling, FaHandshake, FaHeart } from 'react-icons/fa'; // Icons for visual enhancement
@@ -101,6 +104,7 @@ const CurrentInitiatives = () => {
               {/* Button */}
               <Box sx={{ mt: 2 }}>
                 <Button
+                  component="a"
                   href={initiative.buttonLink}
                   variant="contained"
                   color="primary"
