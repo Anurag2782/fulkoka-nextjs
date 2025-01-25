@@ -10,7 +10,7 @@ const GetInvolved = () => {
       image: 'https://www.disabilityscot.org.uk/wp-content/uploads/2022/09/volwithusnarrow.jpg',
       icon: <FaHandshake />,
       buttonText: 'Learn More',
-      buttonLink: '/get-involved/volunteer',
+      buttonLink: '/get-involved/donate',
     },
     {
       title: 'Make a Donation',
@@ -26,7 +26,7 @@ const GetInvolved = () => {
       image: 'https://cdn-icons-png.flaticon.com/512/6533/6533065.png',
       icon: <FaSeedling />,
       buttonText: 'Partner Now',
-      buttonLink: '/get-involved/partner',
+      buttonLink: '/get-involved/donate',
     },
   ];
 
@@ -54,7 +54,7 @@ const GetInvolved = () => {
           mt: 0,
           maxWidth: '800px',
           mx: 'auto',
-          fontFamily: 'Poppins',
+          fontFamily: 'Georgia',
           color: '#4A4A4A',
           fontSize: { xs: '1rem', md: '1.2rem' },
           lineHeight: '1.8',
@@ -77,23 +77,22 @@ const GetInvolved = () => {
                     mx: 'auto',
                     backgroundColor:"#FFF",}}>
                 <CardMedia
-                  component="img"
+                  // component="img"
                   height="150"
-                  image={option.image}
-                  alt={option.title}
+                  // image={option.image}
+                  // alt={option.title}
                   sx={{
-                    width: {xs : "60%",md :'40%'},
+                    // width: {xs : "60%",md :'40%'},
                     // height : "auto",
                     borderRadius: '8px',
                     objectFit: 'cover',
                     maxHeight: {xs : 'auto',md :'150px'},
                     mx: 'auto',
                     backgroundColor:"#FFF",
+                    padding: 2,
                   }}
-                />
-                
-              </Card>
-              <Typography
+                >
+                  <Typography
                 variant="h6"
                 sx={{
                   fontWeight: 'bold',
@@ -106,7 +105,12 @@ const GetInvolved = () => {
               >
                 {option.icon} {option.title}
               </Typography>
-              <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Poppins', color: '#4A4A4A' }}>
+
+                </CardMedia>
+                
+              </Card>
+              
+              <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Georgia', color: '#4A4A4A' }}>
                 {option.description}
               </Typography>
               
@@ -121,6 +125,7 @@ const GetInvolved = () => {
                     padding: { xs: '6px 12px', sm: '8px 16px' },
                     fontWeight: 'bold',
                     backgroundColor: '#3B173B',
+                    fontFamily : ""
                   }}
                 >
                   {option.buttonText}

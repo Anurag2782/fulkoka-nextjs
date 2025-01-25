@@ -8,18 +8,17 @@ const GetInvolvedPage = () => {
       maxWidth="lg"
       sx={{
         paddingY: { xs: "30px", sm: "40px", md: "60px" },
-        fontFamily: "Poppins",
-        backgroundColor: "#FFF8F0", // Light yellow background
+        fontFamily: "Georgia", 
+        // backgroundColor: "#FFF8F0",
       }}
     >
-      {/* Page Header */}
       <Box textAlign="center" mb={6}>
         <Typography
           variant="h3"
           sx={{
-            fontFamily: "Montserrat", // Updated heading font
+            fontFamily: "Montserrat", // Keep Montserrat for headers
             fontWeight: "700",
-            color: "#3B173B", // Dark plum
+            color: "#3B173B",
             fontSize: { xs: "2rem", md: "2.8rem" },
           }}
         >
@@ -29,20 +28,19 @@ const GetInvolvedPage = () => {
           sx={{
             width: "100px",
             height: "3px",
-            backgroundColor: "#F6B83A", // Bright yellow for emphasis
+            backgroundColor: "#F6B83A",
             margin: "16px auto",
           }}
         />
       </Box>
 
-      {/* Section: Give */}
       <Box mb={8}>
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "Montserrat", // Updated heading font
+            fontFamily: "Montserrat", // Keep Montserrat for headers
             fontWeight: "700",
-            color: "#3B173B", // Dark plum
+            color: "#3B173B",
             mb: 2,
             fontSize: { xs: "1.8rem", md: "2.2rem" },
           }}
@@ -52,10 +50,11 @@ const GetInvolvedPage = () => {
         <Typography
           variant="body1"
           sx={{
-            color: "#4A4A4A", // Neutral dark gray
+            color: "#000",
             mb: 2,
             fontSize: { xs: "1rem", md: "1.2rem" },
             lineHeight: "1.8",
+            fontFamily: "Georgia", // Apply Georgia font to the body text
           }}
         >
           Your support can help us create real impact. By donating, you contribute to tackling emerging public health
@@ -67,7 +66,7 @@ const GetInvolvedPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             sx={{
-              color: "#F6B83A", // Bright yellow
+              color: "#F6B83A",
               textDecoration: "none",
               fontWeight: "600",
             }}
@@ -78,16 +77,15 @@ const GetInvolvedPage = () => {
         </Typography>
       </Box>
 
-      <Divider sx={{ borderColor: "#C5A3C5", mb: 8 }} /> {/* Soft plum divider */}
+      <Divider sx={{ borderColor: "#C5A3C5", mb: 8 }} />
 
-      {/* Section: Volunteer / Join Friends of Fulkoka Chapter */}
       <Box>
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "'Montserrat'", // Updated heading font
+            fontFamily: "Montserrat", // Keep Montserrat for headers
             fontWeight: "700",
-            color: "#3B173B", // Dark plum
+            color: "#3B173B",
             mb: 2,
             fontSize: { xs: "1.8rem", md: "2.2rem" },
           }}
@@ -97,9 +95,10 @@ const GetInvolvedPage = () => {
         <Typography
           variant="body1"
           sx={{
-            color: "#4A4A4A", // Neutral dark gray
+            color: "#000",
             fontSize: { xs: "1rem", md: "1.2rem" },
             lineHeight: "1.8",
+            fontFamily: "Georgia", // Apply Georgia font to the body text
           }}
         >
           Be a part of the movement! Whether you’re passionate about environmental sustainability, education, or health,
@@ -108,7 +107,7 @@ const GetInvolvedPage = () => {
           <Link
             href="#"
             sx={{
-              color: "#F6B83A", // Bright yellow
+              color: "#F6B83A",
               textDecoration: "none",
               fontWeight: "600",
             }}

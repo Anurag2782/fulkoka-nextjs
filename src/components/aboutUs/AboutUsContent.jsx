@@ -11,9 +11,9 @@ const AboutUsContent = () => {
         sx={{
           textAlign: 'center',
           fontWeight: 'bold',
-          fontFamily: 'Montserrat', // Updated font family
+          fontFamily: 'Montserrat',
           fontSize: { xs: '2rem', md: '2.8rem' },
-          color: '#3B173B', // Dark plum color
+          color: '#3B173B',
         }}
       >
         Our Mission
@@ -25,8 +25,8 @@ const AboutUsContent = () => {
           mt: 2,
           maxWidth: '800px',
           mx: 'auto',
-          fontFamily: 'Poppins',
-          color: '#4A4A4A', // Neutral gray
+          fontFamily: 'Georgia',
+          color: '#4A4A4A', 
           fontSize: { xs: '1rem', md: '1.2rem' },
           lineHeight: '1.8',
         }}
@@ -53,7 +53,7 @@ const AboutUsContent = () => {
             >
               <FaSeedling style={{ marginRight: '8px' }} /> Our Vision
             </Typography>
-            <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Poppins', color: '#4A4A4A' }}>
+            <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Georgia', color: '#4A4A4A' }}>
               We envision a world where every individual enjoys optimal health and well-being, free from preventable diseases and social disparities.
             </Typography>
             {/* Image */}
@@ -65,7 +65,7 @@ const AboutUsContent = () => {
                 alt="Our Vision Image"
               />
               <CardContent>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" sx={{fontFamily : 'Georgia'}}>
                   Vision of a healthy, prosperous future for all.
                 </Typography>
               </CardContent>
@@ -89,7 +89,7 @@ const AboutUsContent = () => {
             >
               <FaHandshake style={{ marginRight: '8px' }} /> Our Mission
             </Typography>
-            <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Poppins', color: '#4A4A4A' }}>
+            <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Georgia', color: '#4A4A4A' }}>
               Empowering communities to create a healthier, greener, and more resilient world through collaboration, education, and advocacy.
             </Typography>
             {/* Image */}
@@ -101,7 +101,7 @@ const AboutUsContent = () => {
                 alt="Our Mission Image"
               />
               <CardContent>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" sx={{fontFamily : 'Georgia'}}>
                   Collaboration for a sustainable and healthier future.
                 </Typography>
               </CardContent>
@@ -125,7 +125,7 @@ const AboutUsContent = () => {
             >
               <FaHeart style={{ marginRight: '8px' }} /> What Guides Us
             </Typography>
-            <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Poppins', color: '#4A4A4A' }}>
+            <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Georgia', color: '#4A4A4A' }}>
               Inclusivity, Equity, Social Justice, and Harmony with Nature are at the heart of our work. We believe that sustainable change starts with individual and collective empowerment.
             </Typography>
             {/* Image */}
@@ -137,7 +137,7 @@ const AboutUsContent = () => {
                 alt="Guiding Principles Image"
               />
               <CardContent>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" sx={{fontFamily : 'Georgia'}}>
                   Advocating for justice, equality, and sustainable harmony with nature.
                 </Typography>
               </CardContent>

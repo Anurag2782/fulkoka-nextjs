@@ -57,7 +57,7 @@ const HeroSection = () => {
           variant="h5"
           sx={{
             mt: 2,
-            fontFamily: 'Poppins', // Updated font family
+            fontFamily: 'Georgia', // Updated font family
             color: '#E0E0E0', // Lighter color for the subheading
             fontSize: { xs: '1.2rem', md: '1.5rem' },
           }}
@@ -66,7 +66,7 @@ const HeroSection = () => {
         </Typography>
 
         <Button
-          href="#mission"
+          href="/about"
           sx={{
             mt: 4,
             px: 4,
@@ -74,7 +74,7 @@ const HeroSection = () => {
             backgroundColor: '#1A73E8',
             color: 'white',
             borderRadius: 20,
-            fontFamily: 'Poppins', // Updated font family
+            fontFamily: 'Georgia', // Updated font family
             fontSize: '1rem',
             fontWeight: 'bold',
             '&:hover': {

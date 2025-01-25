@@ -20,14 +20,14 @@ const CurrentInitiatives = () => {
       buttonText: 'Donate Now',
       buttonLink: '/get-involved/donate',
     },
-    {
-      title: 'Educational Outreach',
-      description: 'Providing educational support and resources for underprivileged communities.',
-      image: 'https://th.bing.com/th/id/OIP.PEuWX5US8bgy6v8yktvGxAHaE7?rs=1&pid=ImgDetMain',
-      icon: <FaHandshake />,
-      buttonText: 'Join the Cause',
-      buttonLink: '/get-involved/volunteer',
-    },
+    // {
+    //   title: 'Educational Outreach',
+    //   description: 'Providing educational support and resources for underprivileged communities.',
+    //   image: 'https://th.bing.com/th/id/OIP.PEuWX5US8bgy6v8yktvGxAHaE7?rs=1&pid=ImgDetMain',
+    //   icon: <FaHandshake />,
+    //   buttonText: 'Join the Cause',
+    //   buttonLink: '/get-involved/volunteer',
+    // },
   ];
 
   return (
@@ -54,7 +54,7 @@ const CurrentInitiatives = () => {
           mt: 1,
           maxWidth: '800px',
           mx: 'auto',
-          fontFamily: 'Poppins', // Consistent font family
+          fontFamily: 'Georgia', // Consistent font family
           color: '#4A4A4A', // Consistent color scheme
           fontSize: { xs: '1rem', md: '1.2rem' },
           lineHeight: '1.8',
@@ -81,7 +81,7 @@ const CurrentInitiatives = () => {
               >
                 {initiative.icon} {initiative.title}
               </Typography>
-              <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Poppins', color: '#4A4A4A' }}>
+              <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Georgia', color: '#4A4A4A' }}>
                 {initiative.description}
               </Typography>
               {/* Image */}

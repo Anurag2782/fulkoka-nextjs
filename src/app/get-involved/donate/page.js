@@ -4,7 +4,7 @@ import { Box, Typography, Grid, TextField, Button, Container, Divider, Link } fr
 import { FaHandsHelping, FaHeart, FaUserPlus } from 'react-icons/fa'; // Importing icons for visual enhancement
 
 const DonatePage = () => {
-  const [donationAmount, setDonationAmount] = useState(100); 
+  const [donationAmount, setDonationAmount] = useState(100);
   const [customAmount, setCustomAmount] = useState('');
 
   const handleDonationChange = (event, newValue) => {
@@ -26,8 +26,8 @@ const DonatePage = () => {
       maxWidth="lg"
       sx={{
         paddingY: { xs: "30px", sm: "40px", md: "60px" },
-        fontFamily: "Poppins",
-        backgroundColor: "#FFF8F0", // Light yellow background similar to GetInvolvedPage
+        fontFamily: "Georgia", // Apply Georgia font to the whole container
+        // backgroundColor: "#FFF8F0", // Light yellow background similar to GetInvolvedPage
       }}
     >
       {/* Page Header */}
@@ -35,9 +35,9 @@ const DonatePage = () => {
         <Typography
           variant="h3"
           sx={{
-            fontFamily: "Montserrat", // Consistent with GetInvolvedPage
+            fontFamily: "Montserrat", // Keep Montserrat for headers
             fontWeight: "700",
-            color: "#3B173B", // Dark plum color
+            color: "#000", // Dark plum color
             fontSize: { xs: "2rem", md: "2.8rem" },
           }}
         >
@@ -57,11 +57,11 @@ const DonatePage = () => {
       <Typography
         variant="body1"
         sx={{
-          color: "#4A4A4A", // Neutral dark gray
+          color: "#000", // Neutral dark gray
           mb: 6,
           fontSize: { xs: "1rem", md: "1.2rem" },
           lineHeight: "1.8",
-          textAlign: 'center',
+          fontFamily: "Georgia", // Apply Georgia font to the body text
         }}
       >
         Your support can help us create real impact. By donating, you contribute to tackling emerging public health
@@ -87,24 +87,10 @@ const DonatePage = () => {
 
       {/* Donation Form Section */}
       <Box mb={6}>
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: "Montserrat", // Updated heading font
-            fontWeight: "700",
-            color: "#3B173B", // Dark plum color
-            mb: 2,
-            
-            fontSize: { xs: "1.8rem", md: "2.2rem" },
-          }}
-        >
-          Choose Your Donation Amount
-        </Typography>
-
         <form onSubmit={handleSubmit}>
           <Grid container spacing={4}>
             {/* Custom Donation Amount */}
-            <Grid item xs={12}>
+            {/* <Grid item xs={12}>
               <TextField
                 fullWidth
                 label="Or enter your custom amount"
@@ -118,29 +104,31 @@ const DonatePage = () => {
                   '& .MuiInputBase-root': { backgroundColor: '#fafafa' },
                 }}
               />
-            </Grid>
+            </Grid> */}
 
             {/* Submit Button */}
             <Grid item xs={12} sx={{ textAlign: 'center' }}>
-              <Link href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" >
-                <Button
-                  type="submit"
-                  variant="contained"
-                  sx={{
-                    backgroundColor: '#F6B83A',
-                    color: 'white',
-                    fontWeight: 'bold',
-                    padding: '12px 24px',
-                    '&:hover': {
-                      backgroundColor: '#E3962A',
-                    },
-                    borderRadius: '6px',
-                  }}
-                >
-                  Donate Now
-                </Button>
-              </Link>
+              <Button
+                component="a"
+                href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm"
+                target="_blank" // Opens in a new tab
+                rel="noopener noreferrer" // For security reasons
+                variant="contained"
+                sx={{
+                  backgroundColor: '#F6B83A',
+                  color: 'white',
+                  fontWeight: 'bold',
+                  padding: '12px 24px',
+                  '&:hover': {
+                    backgroundColor: '#E3962A',
+                  },
+                  borderRadius: '6px',
+                }}
+              >
+                Donate Now
+              </Button>
             </Grid>
+
           </Grid>
         </form>
       </Box>
@@ -152,7 +140,7 @@ const DonatePage = () => {
           variant="h4"
           sx={{
             fontWeight: '600',
-            color: '#3B173B', // Dark plum color
+            color: '#000', // Dark plum color
             textAlign: 'center',
             fontFamily: "Montserrat",
           }}
@@ -162,11 +150,11 @@ const DonatePage = () => {
         <Typography
           variant="body1"
           sx={{
-            color: "#4A4A4A", // Neutral dark gray
+            color: "#000", // Neutral dark gray
             mt: 2,
             fontSize: { xs: '1rem', md: '1.2rem' },
             lineHeight: '1.8',
-            textAlign: 'center',
+            fontFamily: "Georgia", // Apply Georgia font to the body text
           }}
         >
           Your generosity is truly appreciated. Your contribution will help us continue our work and make a positive impact.
