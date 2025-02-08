@@ -5,7 +5,7 @@ import { Box, Typography, Container, Divider, Link } from "@mui/material";
 const GetInvolvedPage = () => {
   return (
     <Container
-      maxWidth="lg"
+      maxWidth="md"
       sx={{
         paddingY: { xs: "30px", sm: "40px", md: "60px" },
         fontFamily: "Georgia", 

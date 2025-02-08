@@ -15,12 +15,12 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#4B134F", // Matches navbar color
-        color: "white",
+        backgroundColor: "#FFF8F0",
+        color: "black",
         py: 4,
         mt: 0,
         overflowX: "hidden",
-        fontFamily: "'Georgia', sans-serif", // Default font for the entire footer
+        fontFamily: "'Georgia', sans-serif", 
       }}
     >
       <Box sx={{ maxWidth: "1200px", margin: "0 auto", px: 2 }}>
@@ -39,29 +39,29 @@ const Footer = () => {
                   width: 50,
                   height: 50,
                   borderRadius: "50%",
-                  backgroundColor: "white", // White background for better visibility
+                  // backgroundColor: "black",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Subtle shadow
+                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
                 }}
               >
                 <img
-                  src="/images/navbar/Fulkoka-logo.png"
+                  src="/images/navbar/Fulkoka-logo2.png"
                   alt="Fulkoka Logo"
-                  style={{ width: "80%", height: "80%" }} // Adjust size to fit within the background
+                  style={{ width: "100%", height: "100%" }} 
                 />
               </Box>
               <Typography
                 variant="h6"
                 sx={{
                   fontFamily: "'Georgia', serif", // Georgia for the logo text
-                  color: "white",
+                  color: "black",
                   fontWeight: "bold",
                 }}
               >
                 <Link href="/">
-                  <Box sx={{ textDecoration: "none", color: "white" }}>
+                  <Box sx={{ textDecoration: "none", color: "black" }}>
                     Fulkoka
                   </Box>
                 </Link>
@@ -84,7 +84,7 @@ const Footer = () => {
               sx={{
                 display: "block",
                 mt: 1,
-                color: "white",
+                color: "black",
                 textDecoration: "none",
                 fontSize: "14px",
                 fontWeight: "medium",
@@ -121,7 +121,7 @@ const Footer = () => {
                   href={link.href}
                   sx={{
                     display: "block",
-                    color: "white",
+                    color: "black",
                     textDecoration: "none",
                     mb: 1,
                     fontSize: "14px",
@@ -217,7 +217,7 @@ const Footer = () => {
                     <IconButton
                       sx={{
                         fontSize: "24px",
-                        color: "white",
+                        color: "black",
                         "&:hover": { color: "#FFD700" },
                       }}
                     >
@@ -278,7 +278,7 @@ const Footer = () => {
         <Box
           sx={{
             mt: 3,
-            borderTop: "1px solid white",
+            borderTop: "1px solid black",
             pt: 2,
             textAlign: "center",
           }}
@@ -302,7 +302,7 @@ const Footer = () => {
                 key={index}
                 // href={link.href}
                 sx={{
-                  color: "white",
+                  color: "black",
                   textDecoration: "none",
                   fontSize: "14px",
                   mx: 1,

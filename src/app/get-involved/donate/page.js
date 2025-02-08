@@ -23,11 +23,12 @@ const DonatePage = () => {
 
   return (
     <Container
-      maxWidth="lg"
+      maxWidth="md"
       sx={{
         paddingY: { xs: "30px", sm: "40px", md: "60px" },
-        fontFamily: "Georgia", // Apply Georgia font to the whole container
-        // backgroundColor: "#FFF8F0", // Light yellow background similar to GetInvolvedPage
+        fontFamily: "Georgia", 
+        // paddingX: { xs: "30px",md : "100px"},
+        
       }}
     >
       {/* Page Header */}

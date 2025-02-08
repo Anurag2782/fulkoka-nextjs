@@ -9,7 +9,7 @@ const GetInvolved = () => {
       title: 'Volunteer with Us',
       description: 'Lend your skills and time to help us organize events, run campaigns, and empower communities in need.',
       image: 'https://www.disabilityscot.org.uk/wp-content/uploads/2022/09/volwithusnarrow.jpg',
-      icon: <FaHandshake />,
+      // icon: <FaHandshake />,
       buttonText: 'Learn More',
       buttonLink: '/get-involved/donate',
     },
@@ -17,7 +17,7 @@ const GetInvolved = () => {
       title: 'Make a Donation',
       description: 'Your generous contributions fuel our mission to provide education, healthcare, and other critical services.',
       image: 'https://th.bing.com/th/id/OIP.y85FJQ1i1v6iCLxomlZzjgHaHa?rs=1&pid=ImgDetMain',
-      icon: <FaHeart />,
+      // icon: <FaHeart />,
       buttonText: 'Donate Now',
       buttonLink: '/get-involved/donate',
     },
@@ -25,8 +25,8 @@ const GetInvolved = () => {
       title: 'Partner with Us',
       description: 'Collaborate with us as a corporate or community partner and help expand our reach and impact.',
       image: 'https://cdn-icons-png.flaticon.com/512/6533/6533065.png',
-      icon: <FaSeedling />,
-      buttonText: 'Partner Now',
+      // icon: <FaSeedling />,
+      buttonText: 'Learn More',
       buttonLink: '/get-involved/donate',
     },
   ];
@@ -137,7 +137,7 @@ const GetInvolved = () => {
         ))}
       </Grid>
 
-      {/* <Divider sx={{ borderColor: '#F6B83A', my: 6 }} />  */}
+      <Divider sx={{ borderColor: '#F6B83A', mt: 6 }} /> 
     </Box>
   );
 };

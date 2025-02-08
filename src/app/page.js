@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <div style={{width : {xs : "100%", md : "80%"}}}>
     {/* <div style={{height:"50vh"}}>
 
       Fulkoka
@@ -22,6 +22,6 @@ export default function Home() {
     <CurrentInitiatives />
     <GetInvolved />
     {/* <Testimonials /> */}
-    </>
+    </div>
   );
 }

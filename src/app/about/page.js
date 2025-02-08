@@ -6,7 +6,7 @@ import OurTeam from "@/components/ourTeam/OurTeamSection";
 const AboutUs = () => {
   return (
     <Container
-      maxWidth="lg"
+      maxWidth="md"
       sx={{
         paddingY: { xs: "30px", sm: "40px", md: "60px" },
         fontFamily: "Georgia, serif", 

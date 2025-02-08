@@ -17,6 +17,7 @@ const linkStyles = {
 
 const theme = {
   secondaryColor: "#3B173B",
+  tertiaryColor: "#F6B83A",
   backgroundColor: "#FFF8F0",
   textColor: "#4A4A4A",
   fontFamily: "Poppins",
@@ -55,7 +56,7 @@ const NewsMediaPage = () => {
 
   return (
     <Container
-      maxWidth="lg"
+      maxWidth="md"
       sx={{
         paddingY: { xs: "30px", sm: "40px", md: "60px" },
         fontFamily: theme.fontFamily,
@@ -75,7 +76,7 @@ const NewsMediaPage = () => {
         >
           News & Media
         </Typography>
-        <Divider sx={{ width: "100px", height: "3px", backgroundColor: theme.secondaryColor, margin: "0 auto" }} />
+        <Divider sx={{ width: "100px", height: "3px", backgroundColor: theme.tertiaryColor, margin: "0 auto" }} />
       </Box>
 
       <Box component="ul" sx={{ paddingLeft: { xs: "1rem", sm: "1.5rem" }, my: 6 }}>

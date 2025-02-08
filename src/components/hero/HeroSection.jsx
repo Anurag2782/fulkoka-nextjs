@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
-import { FaLeaf } from 'react-icons/fa'; // Icon for visual enhancement
+import { FaLeaf } from 'react-icons/fa'; 
 
 const HeroSection = () => {
   return (
@@ -26,7 +26,7 @@ const HeroSection = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Dark overlay for contrast
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', 
         }}
       />
       
@@ -46,9 +46,9 @@ const HeroSection = () => {
           variant="h3"
           sx={{
             fontWeight: 'bold',
-            fontFamily: 'Montserrat', // Updated font family
+            fontFamily: 'Montserrat',
             fontSize: { xs: '2.2rem', md: '3.5rem' },
-            color: '#FFF', // Ensured good contrast with background
+            color: '#FFF', 
           }}
         >
           About Us
@@ -58,8 +58,8 @@ const HeroSection = () => {
           variant="h5"
           sx={{
             mt: 2,
-            fontFamily: 'Georgia', // Updated font family
-            color: '#E0E0E0', // Lighter color for the subheading
+            fontFamily: 'Georgia', 
+            color: '#E0E0E0',
             fontSize: { xs: '1.2rem', md: '1.5rem' },
           }}
         >
@@ -72,18 +72,21 @@ const HeroSection = () => {
             mt: 4,
             px: 4,
             py: 2,
-            backgroundColor: '#1A73E8',
+            backgroundColor: '#4B134F',
             color: 'white',
             borderRadius: 20,
-            fontFamily: 'Georgia', // Updated font family
+            fontFamily: 'Georgia', 
             fontSize: '1rem',
             fontWeight: 'bold',
             '&:hover': {
-              backgroundColor: '#1769aa',
+              // backgroundColor: '#4B135F',
+              scale : 1.01
             },
+            textTransform:"none",
           }}
         >
-          <FaLeaf style={{ marginRight: '8px' }} /> Learn More
+          {/* <FaLeaf style={{ marginRight: '8px' }} />  */}
+          Learn More
         </Button>
       </Box>
     </Box>

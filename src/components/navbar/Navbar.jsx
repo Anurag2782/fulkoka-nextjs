@@ -14,8 +14,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); 
-  const [submenuOpenIndex, setSubmenuOpenIndex] = useState(null); 
+  const [isOpen, setIsOpen] = useState(false);
+  const [submenuOpenIndex, setSubmenuOpenIndex] = useState(null);
   const isMobile = useMediaQuery("(max-width:600px)");
 
   const menuItems = [
@@ -43,7 +43,8 @@ export default function Navbar() {
       position="sticky"
       sx={{
         // background: "linear-gradient(90deg, #4B134F, #B838C1, #FFD700)",
-        backgroundColor:"#4B134F",
+        // backgroundColor:"#4B134F",
+        backgroundColor: "#FFF8F0",
         boxShadow: "none",
       }}
     >
@@ -61,7 +62,8 @@ export default function Navbar() {
               width: 50,
               height: 50,
               borderRadius: "50%",
-              backgroundColor: "white",
+              // backgroundColor: "black",
+              backgroundColor: "#FFF8F0",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -69,21 +71,25 @@ export default function Navbar() {
             }}
           >
             <img
-              src="/images/navbar/Fulkoka-logo.png"
+              src="/images/navbar/Fulkoka-logo2.png"
               alt="Fulkoka Logo"
-              style={{ width: "80%", height: "80%" }} // Adjust size to fit within the background
+              style={{
+                width: "100%",
+                height: "100%",
+                backgroundColor: "#FFF8F0",
+              }} // Adjust size to fit within the background
             />
           </Box>
           <Typography
             variant="h6"
             sx={{
               fontFamily: "'Playfair Display', serif",
-              color: "white",
+              color: "black",
               fontWeight: "bold",
             }}
           >
             <Link href="/" passHref>
-              <Box sx={{ textDecoration: "none", color: "white" }}>Fulkoka</Box>
+              <Box sx={{ textDecoration: "none", color: "black" }}>Fulkoka</Box>
             </Link>
           </Typography>
         </Box>
@@ -96,14 +102,17 @@ export default function Navbar() {
                 <Link href={item.link} passHref>
                   <Button
                     sx={{
+                      paddingX: item.name == "Donate" ? 2 : "",
                       fontFamily: "Montserrat",
                       fontWeight: "bold",
-                      color: "white",
-                      backgroundColor : item.name == "Donate"? "#4B134F": "",
+                      color: item.name == "Donate" ? "white" : "black",
+                      backgroundColor: item.name == "Donate" ? "#4B134F" : "",
+                      borderRadius: item.name == "Donate" ? 2 : "",
                       "&:hover": {
-                        color: "#FFD700",
-                        backgroundColor: item.name == "Donate"? "#4B134F":  "transparent",
-                        scale:1.1
+                        color: item.name == "Donate" ? "white" : "#FFD700",
+                        backgroundColor:
+                          item.name == "Donate" ? "#4B134F" : "transparent",
+                        scale: 1.1,
                       },
                     }}
                   >
@@ -122,51 +131,54 @@ export default function Navbar() {
 
         {/* Mobile Hamburger Menu */}
         {isMobile && (
-          <IconButton color="inherit" onClick={toggleMenu} sx={{ ml: "auto" }}>
+          <IconButton
+            color="inherit"
+            onClick={toggleMenu}
+            sx={{ ml: "auto", color: "black" }}
+          >
             <MenuIcon />
           </IconButton>
         )}
       </Toolbar>
 
       {/* Mobile Menu */}
-{isMobile && isOpen && (
-  <Box
-    sx={{
-      backgroundColor: "#4B134F",
-      boxShadow: 3,
-      zIndex: 10,
-      position: "absolute",
-      top: 64,
-      left: 0,
-      width: "100%",
-    }}
-  >
-    {menuItems.map((item) => (
-      <Box key={item.name}>
-        <Link href={item.link} passHref>
-          <Button
-            sx={{
-              width: "100%",
-              textAlign: "left",
-              padding: "12px 20px",
-              fontFamily: "'Roboto', sans-serif",
-              fontWeight: "bold",
-              color: "white",
-              "&:hover": {
-                color: "#FFD700",
-                backgroundColor: "rgba(255, 215, 0, 0.1)",
-              },
-            }}
-            onClick={closeMenu} // Close the menu on click
-          >
-            {item.name}
-          </Button>
-        </Link>
-      </Box>
-    ))}
-  </Box>
-)}
-
+      {isMobile && isOpen && (
+        <Box
+          sx={{
+            backgroundColor: "#FFF8F0",
+            boxShadow: 3,
+            zIndex: 10,
+            position: "absolute",
+            top: 64,
+            left: 0,
+            width: "100%",
+          }}
+        >
+          {menuItems.map((item) => (
+            <Box key={item.name}>
+              <Link href={item.link} passHref>
+                <Button
+                  sx={{
+                    width: "100%",
+                    textAlign: "left",
+                    padding: "12px 20px",
+                    fontFamily: "Montserrat",
+                    fontWeight: "bold",
+                    color: "black",
+                    "&:hover": {
+                      color: "#FFD700",
+                      backgroundColor: "rgba(255, 215, 0, 0.1)",
+                    },
+                  }}
+                  onClick={closeMenu} // Close the menu on click
+                >
+                  {item.name}
+                </Button>
+              </Link>
+            </Box>
+          ))}
+        </Box>
+      )}
     </AppBar>
   );
 }

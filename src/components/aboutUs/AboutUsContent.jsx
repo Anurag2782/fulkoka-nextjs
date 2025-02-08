@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { Box, Grid, Typography, Paper, Card, CardMedia, CardContent, Divider } from '@mui/material';
-import { FaSeedling, FaHandshake, FaHeart } from 'react-icons/fa'; // Icons for visual enhancement
+import { FaSeedling, FaHandshake, FaHeart } from 'react-icons/fa'; 
 
 const AboutUsContent = () => {
   return (
@@ -52,7 +52,8 @@ const AboutUsContent = () => {
                 justifyContent: 'center',
               }}
             >
-              <FaSeedling style={{ marginRight: '8px' }} /> Our Vision
+              {/* <FaSeedling style={{ marginRight: '8px' }} /> */}
+               Our Vision
             </Typography>
             <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Georgia', color: '#4A4A4A' }}>
               We envision a world where every individual enjoys optimal health and well-being, free from preventable diseases and social disparities.
@@ -88,7 +89,8 @@ const AboutUsContent = () => {
                 justifyContent: 'center',
               }}
             >
-              <FaHandshake style={{ marginRight: '8px' }} /> Our Mission
+              {/* <FaHandshake style={{ marginRight: '8px' }} />  */}
+              Our Mission
             </Typography>
             <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Georgia', color: '#4A4A4A' }}>
               Empowering communities to create a healthier, greener, and more resilient world through collaboration, education, and advocacy.
@@ -124,7 +126,8 @@ const AboutUsContent = () => {
                 justifyContent: 'center',
               }}
             >
-              <FaHeart style={{ marginRight: '8px' }} /> What Guides Us
+              {/* <FaHeart style={{ marginRight: '8px' }} />  */}
+              What Guides Us
             </Typography>
             <Typography variant="body2" sx={{ mt: 2, fontFamily: 'Georgia', color: '#4A4A4A' }}>
               Inclusivity, Equity, Social Justice, and Harmony with Nature are at the heart of our work. We believe that sustainable change starts with individual and collective empowerment.
@@ -133,7 +136,7 @@ const AboutUsContent = () => {
             <Card sx={{ mt: 2 }}>
               <CardMedia
                 component="img"
-                height="140"
+                height="160"
                 image="https://th.bing.com/th/id/R.20ad86b5d39c216157784433168dc80f?rik=Y0wBgkGhaygOBw&riu=http%3a%2f%2finsightswithimpact.org%2fwp-content%2fuploads%2f2019%2f11%2fDEI-graphic.png&ehk=ADRvhrzb140AXgstSNX6ae1BiyCd83DxMjebTch%2fyGM%3d&risl=&pid=ImgRaw&r=0"
                 alt="Guiding Principles Image"
               />

@@ -5,25 +5,25 @@ import { FaUsers, FaBalanceScale, FaHandHoldingHeart, FaTree } from 'react-icons
 
 const coreValuesData = [
   {
-    icon: <FaUsers size={80} color="#3B173B" />,
+    // icon: <FaUsers size={80} color="#3B173B" />,
     title: 'Inclusivity and Non-Discrimination',
     shortText: 'We embrace diversity and are committed to ensuring respect and dignity.',
     fullText: 'We embrace diversity and are committed to ensuring that every individual, regardless of gender, ethnicity, religion, ability, neurodivergence, or socioeconomic status, is treated with respect and dignity. Our programs and initiatives are designed to be inclusive, accessible, and empowering for all.'
   },
   {
-    icon: <FaBalanceScale size={80} color="#3B173B" />,
+    // icon: <FaBalanceScale size={80} color="#3B173B" />,
     title: 'Equity and Fairness',
     shortText: 'We prioritize the needs of marginalized communities.',
     fullText: 'We prioritize the needs of marginalized and underserved communities, including individuals with disabilities and neurodivergent populations. Our efforts focus on creating equitable access to resources, education, healthcare, and opportunities, fostering a society where no one is left behind.'
   },
   {
-    icon: <FaHandHoldingHeart size={80} color="#3B173B" />,
+    // icon: <FaHandHoldingHeart size={80} color="#3B173B" />,
     title: 'Social Justice',
     shortText: 'We stand for a fair and just society.',
     fullText: 'We stand for a fair and just society where everyone has the right to live with dignity, safety, and opportunity. Our work challenges systemic inequalities and advocates for policies and practices that uphold human rights and advance social equity.'
   },
   {
-    icon: <FaTree size={80} color="#3B173B" />,
+    // icon: <FaTree size={80} color="#3B173B" />,
     title: 'Harmony with Nature',
     shortText: 'We recognize the deep interconnection between humanity and nature.',
     fullText: 'We recognize the deep interconnection between humanity and the environment. Our initiatives promote sustainable living, the conservation of natural resources, and resilience against climate change, striving for a balanced coexistence that nurtures both people and the planet.'
