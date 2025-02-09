@@ -36,9 +36,9 @@ const DonatePage = () => {
         <Typography
           variant="h3"
           sx={{
-            fontFamily: "Montserrat", // Keep Montserrat for headers
+            fontFamily: "Georgia", 
             fontWeight: "700",
-            color: "#000", // Dark plum color
+            color: "#000", 
             fontSize: { xs: "2rem", md: "2.8rem" },
           }}
         >
@@ -48,7 +48,7 @@ const DonatePage = () => {
           sx={{
             width: "100px",
             height: "3px",
-            backgroundColor: "#F6B83A", // Bright yellow for emphasis
+            backgroundColor: "#F6B83A",
             margin: "16px auto",
           }}
         />
@@ -112,14 +112,15 @@ const DonatePage = () => {
               <Button
                 component="a"
                 href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm"
-                target="_blank" // Opens in a new tab
-                rel="noopener noreferrer" // For security reasons
+                target="_blank"
+                rel="noopener noreferrer" 
                 variant="contained"
                 sx={{
                   backgroundColor: '#F6B83A',
                   color: 'white',
                   fontWeight: 'bold',
                   padding: '12px 24px',
+                  fontFamily:"Georgia",
                   '&:hover': {
                     backgroundColor: '#E3962A',
                   },
@@ -143,7 +144,7 @@ const DonatePage = () => {
             fontWeight: '600',
             color: '#000', // Dark plum color
             textAlign: 'center',
-            fontFamily: "Montserrat",
+            fontFamily: "Georgia",
           }}
         >
           Thank You for Your Support!

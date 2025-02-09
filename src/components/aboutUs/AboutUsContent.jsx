@@ -12,7 +12,7 @@ const AboutUsContent = () => {
         sx={{
           textAlign: 'center',
           fontWeight: 'bold',
-          fontFamily: 'Montserrat',
+          fontFamily: 'Georgia',
           fontSize: { xs: '2rem', md: '2.8rem' },
           color: '#3B173B',
         }}
@@ -45,7 +45,7 @@ const AboutUsContent = () => {
               variant="h6"
               sx={{
                 fontWeight: 'bold',
-                fontFamily: 'Montserrat', 
+                fontFamily: 'Georgia', 
                 color: '#3B173B',
                 display: 'flex',
                 alignItems: 'center',
@@ -82,7 +82,7 @@ const AboutUsContent = () => {
               variant="h6"
               sx={{
                 fontWeight: 'bold',
-                fontFamily: 'Montserrat', 
+                fontFamily: 'Georgia', 
                 color: '#3B173B',
                 display: 'flex',
                 alignItems: 'center',
@@ -119,7 +119,7 @@ const AboutUsContent = () => {
               variant="h6"
               sx={{
                 fontWeight: 'bold',
-                fontFamily: 'Montserrat', 
+                fontFamily: 'Georgia', 
                 color: '#3B173B',
                 display: 'flex',
                 alignItems: 'center',
@@ -137,8 +137,14 @@ const AboutUsContent = () => {
               <CardMedia
                 component="img"
                 height="160"
-                image="https://th.bing.com/th/id/R.20ad86b5d39c216157784433168dc80f?rik=Y0wBgkGhaygOBw&riu=http%3a%2f%2finsightswithimpact.org%2fwp-content%2fuploads%2f2019%2f11%2fDEI-graphic.png&ehk=ADRvhrzb140AXgstSNX6ae1BiyCd83DxMjebTch%2fyGM%3d&risl=&pid=ImgRaw&r=0"
+                // width="100%"
+                // image="https://impm.org/wp-content/uploads/2024/04/DEI.jpg"
+                image='images/HomeAboutUs/DEI2.jpg'
                 alt="Guiding Principles Image"
+                style={{
+                  objectFit: 'fill'
+                  // scale: '0.5'
+                }}
               />
               <CardContent>
                 <Typography variant="body2" color="text.secondary" sx={{fontFamily : 'Georgia'}}>

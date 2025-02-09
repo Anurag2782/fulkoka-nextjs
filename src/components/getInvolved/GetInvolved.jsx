@@ -39,7 +39,7 @@ const GetInvolved = () => {
         sx={{
           textAlign: 'center',
           fontWeight: 'bold',
-          fontFamily: 'Montserrat',
+          fontFamily: 'Georgia',
           fontSize: { xs: '2rem', md: '2.8rem' },
           color: '#3B173B',
         }}
@@ -97,7 +97,7 @@ const GetInvolved = () => {
                 variant="h6"
                 sx={{
                   fontWeight: 'bold',
-                  fontFamily: 'Montserrat',
+                  fontFamily: 'Georgia',
                   color: '#3B173B',
                   display: 'flex',
                   alignItems: 'center',
@@ -126,7 +126,8 @@ const GetInvolved = () => {
                     padding: { xs: '6px 12px', sm: '8px 16px' },
                     fontWeight: 'bold',
                     backgroundColor: '#3B173B',
-                    fontFamily : ""
+                    fontFamily:"Georgia",
+                    textTransform:"none",
                   }}
                 >
                   {option.buttonText}

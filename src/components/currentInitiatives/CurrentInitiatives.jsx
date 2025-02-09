@@ -13,7 +13,7 @@ const CurrentInitiatives = () => {
       image: 'https://img.freepik.com/free-vector/mental-health-awareness-concept_23-2148514643.jpg',
       // icon: <FaHeart />,
       buttonText: 'Get Involved',
-      buttonLink: '/get-involved/volunteer',
+      buttonLink: '/get-involved',
     },
     {
       title: 'Environmental Sustainability',
@@ -41,7 +41,7 @@ const CurrentInitiatives = () => {
         sx={{
           textAlign: 'center',
           fontWeight: 'bold',
-          fontFamily: 'Montserrat', // Consistent font family
+          fontFamily: 'Georgia', // Consistent font family
           fontSize: { xs: '2rem', md: '2.8rem' },
           color: '#3B173B', // Consistent color scheme
         }}
@@ -75,7 +75,7 @@ const CurrentInitiatives = () => {
                 variant="h6"
                 sx={{
                   fontWeight: 'bold',
-                  fontFamily: 'Montserrat',
+                  fontFamily: 'Georgia',
                   color: '#3B173B',
                   display: 'flex',
                   alignItems: 'center',
@@ -112,7 +112,9 @@ const CurrentInitiatives = () => {
                     fontSize: { xs: '0.8rem', sm: '1rem' },
                     padding: { xs: '6px 12px', sm: '8px 16px' },
                     fontWeight: 'bold',
-                    backgroundColor: '#3B173B', // Match primary color
+                    backgroundColor: '#3B173B',
+                    fontFamily:"Georgia",
+                    textTransform:"none",
                   }}
                 >
                   {initiative.buttonText}

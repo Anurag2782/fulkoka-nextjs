@@ -17,7 +17,7 @@ const ProgramsPage = () => {
         <Typography
           variant="h3"
           sx={{
-            fontFamily: "Montserrat",
+            fontFamily: "Georgia",
             fontWeight: "700",
             color: "#3B173B",
             fontSize: { xs: "2rem", md: "2.8rem" },
@@ -53,7 +53,7 @@ const ProgramsPage = () => {
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "Montserrat",
+            fontFamily: "Georgia",
             fontWeight: "700",
             color: "#3B173B",
             mb: 2,
@@ -100,7 +100,7 @@ const ProgramsPage = () => {
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "Montserrat",
+            fontFamily: "Georgia",
             fontWeight: "700",
             color: "#3B173B",
             mb: 2,
@@ -113,7 +113,7 @@ const ProgramsPage = () => {
         <Typography
           variant="h5"
           sx={{
-            fontFamily: "Montserrat",
+            fontFamily: "Georgia",
             fontWeight: "700",
             color: "#3B173B",
             mb: 2,
@@ -155,7 +155,7 @@ const ProgramsPage = () => {
         <Typography
           variant="h5"
           sx={{
-            fontFamily: "Montserrat",
+            fontFamily: "Georgia",
             fontWeight: "700",
             color: "#3B173B",
             mb: 2,
@@ -217,7 +217,7 @@ const ProgramsPage = () => {
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "Montserrat",
+            fontFamily: "Georgia",
             fontWeight: "700",
             color: "#3B173B",
             mb: 2,

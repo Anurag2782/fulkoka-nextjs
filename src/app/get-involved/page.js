@@ -16,7 +16,7 @@ const GetInvolvedPage = () => {
         <Typography
           variant="h3"
           sx={{
-            fontFamily: "Montserrat", // Keep Montserrat for headers
+            fontFamily: "Georgia", // Keep Georgia for headers
             fontWeight: "700",
             color: "#3B173B",
             fontSize: { xs: "2rem", md: "2.8rem" },
@@ -38,7 +38,7 @@ const GetInvolvedPage = () => {
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "Montserrat", // Keep Montserrat for headers
+            fontFamily: "Georgia", // Keep Georgia for headers
             fontWeight: "700",
             color: "#3B173B",
             mb: 2,
@@ -83,7 +83,7 @@ const GetInvolvedPage = () => {
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "Montserrat", // Keep Montserrat for headers
+            fontFamily: "Georgia", // Keep Georgia for headers
             fontWeight: "700",
             color: "#3B173B",
             mb: 2,

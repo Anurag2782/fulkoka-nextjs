@@ -103,7 +103,7 @@ export default function Navbar() {
                   <Button
                     sx={{
                       paddingX: item.name == "Donate" ? 2 : "",
-                      fontFamily: "Montserrat",
+                      fontFamily: "Georgia",
                       fontWeight: "bold",
                       color: item.name == "Donate" ? "white" : "black",
                       backgroundColor: item.name == "Donate" ? "#4B134F" : "",
@@ -162,7 +162,7 @@ export default function Navbar() {
                     width: "100%",
                     textAlign: "left",
                     padding: "12px 20px",
-                    fontFamily: "Montserrat",
+                    fontFamily: "Georgia",
                     fontWeight: "bold",
                     color: "black",
                     "&:hover": {

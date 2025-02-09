@@ -21,7 +21,7 @@ const AboutUs = () => {
         <Typography
           variant="h3"
           sx={{
-            fontFamily: "Montserrat", 
+            fontFamily: "Georgia", 
             fontWeight: "700",
             color: "#3B173B", // Dark plum
             fontSize: { xs: "2rem", md: "2.8rem" },
@@ -79,7 +79,7 @@ const AboutUs = () => {
             <Typography
               variant="h5"
               sx={{
-                fontFamily: "Montserrat",
+                fontFamily: "Georgia",
                 fontWeight: "700",
                 color: "#3B173B", // Dark plum
                 mb: 2,
@@ -142,7 +142,7 @@ const AboutUs = () => {
             <Typography
               variant="h5"
               sx={{
-                fontFamily: "Montserrat",
+                fontFamily: "Georgia",
                 fontWeight: "700",
                 color: "#3B173B", // Dark plum
                 mb: 2,

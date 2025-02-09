@@ -164,7 +164,7 @@ const Footer = () => {
                   fontFamily: "'Georgia', sans-serif", // Georgia for body text
                 }}
               >
-                Phone: +123-456-7890
+                {/* Phone: +123-456-7890 */}
               </Typography>
               <Typography
                 sx={{

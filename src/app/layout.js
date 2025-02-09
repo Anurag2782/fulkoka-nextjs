@@ -3,6 +3,12 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
+// const montserrat = Montserrat({
+//   subsets: ['latin'],
+//   weight: ['400','500','600', '700'], 
+//   variable: '--font-montserrat',
+// });
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}  `}>
         <Navbar />
         {children}
         <Footer />

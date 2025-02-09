@@ -44,7 +44,7 @@ const CoreValues = () => {
         sx={{
           textAlign: 'center',
           fontWeight: 'bold',
-          fontFamily: 'Montserrat',
+          fontFamily: 'Georgia',
           fontSize: { xs: '2rem', md: '2.8rem' },
           color: '#3B173B',
           lineHeight: '1.5'
@@ -112,8 +112,8 @@ const CoreValues = () => {
                   color: '#4A4A4A',
                   fontFamily: 'Georgia',
                   fontSize: '1rem',
-                  transition: 'max-height 0.3s ease', // Smooth transition for expanded content
-                  maxHeight: expanded === index ? '300px' : '56px', // Control max height
+                  transition: 'max-height 0.3s ease', 
+                  maxHeight: expanded === index ? '300px' : '56px',
                   overflow: 'hidden',
                 }}
               >

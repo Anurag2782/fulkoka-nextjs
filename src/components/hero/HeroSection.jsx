@@ -2,6 +2,7 @@
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import { FaLeaf } from 'react-icons/fa'; 
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -10,14 +11,17 @@ const HeroSection = () => {
         position: 'relative',
         width: '100%',
         height: '80vh',
-        backgroundImage: 'url("https://plus.unsplash.com/premium_photo-1723485760056-2b4f59326d6c?q=80&w=1827&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+        // backgroundImage: 'url("https://plus.unsplash.com/premium_photo-1723485760056-2b4f59326d6c?q=80&w=1827&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+        // backgroundImage: 'url("https://drive.google.com/file/d/19hsD_mc_f2tA6Qz8i7QuMiWo7UNfT2df/view?usp=sharing")',
+        backgroundImage : 'url("/images/Hero/BackgroundImage.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: 'white',
         textAlign: 'center',
-        borderRadius: '10px',
+        // borderRadius: '10px',
       }}
     >
+      
       {/* Overlay for better text visibility */}
       <Box
         sx={{
@@ -46,8 +50,8 @@ const HeroSection = () => {
           variant="h3"
           sx={{
             fontWeight: 'bold',
-            fontFamily: 'Montserrat',
-            fontSize: { xs: '2.2rem', md: '3.5rem' },
+            fontFamily: 'Georgia',
+            fontSize: { xs: '2rem', md: '3.5rem' },
             color: '#FFF', 
           }}
         >

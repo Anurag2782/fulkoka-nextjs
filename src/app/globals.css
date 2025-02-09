@@ -20,6 +20,10 @@ body {
   margin: 0;
   font-family: Georgia;
 }
+body {
+  font-family: var(--font-montserrat);
+}
+
 
 a {
   color: inherit;
