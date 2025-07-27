@@ -42,7 +42,7 @@ const DonatePage = () => {
             fontSize: { xs: "2rem", md: "2.8rem" },
           }}
         >
-          Make a Difference with Your Donation
+          Make a difference with your donation
         </Typography>
         <Divider
           sx={{
@@ -127,7 +127,7 @@ const DonatePage = () => {
                   borderRadius: '6px',
                 }}
               >
-                Donate Now
+                Donate now
               </Button>
             </Grid>
 
@@ -147,7 +147,7 @@ const DonatePage = () => {
             fontFamily: "Georgia",
           }}
         >
-          Thank You for Your Support!
+          Thank you for your support!
         </Typography>
         <Typography
           variant="body1"

@@ -6,27 +6,27 @@ import { FaSeedling, FaHandshake, FaHeart } from 'react-icons/fa';
 const GetInvolved = () => {
   const involvementOptions = [
     {
-      title: 'Volunteer with Us',
+      title: 'Volunteer with us',
       description: 'Lend your skills and time to help us organize events, run campaigns, and empower communities in need.',
       image: 'https://www.disabilityscot.org.uk/wp-content/uploads/2022/09/volwithusnarrow.jpg',
       // icon: <FaHandshake />,
-      buttonText: 'Learn More',
+      buttonText: 'Learn more',
       buttonLink: '/get-involved/donate',
     },
     {
-      title: 'Make a Donation',
+      title: 'How you can help',
       description: 'Your generous contributions fuel our mission to provide education, healthcare, and other critical services.',
       image: 'https://th.bing.com/th/id/OIP.y85FJQ1i1v6iCLxomlZzjgHaHa?rs=1&pid=ImgDetMain',
       // icon: <FaHeart />,
-      buttonText: 'Donate Now',
+      buttonText: 'Donate now',
       buttonLink: '/get-involved/donate',
     },
     {
-      title: 'Partner with Us',
+      title: 'Partner with us',
       description: 'Collaborate with us as a corporate or community partner and help expand our reach and impact.',
       image: 'https://cdn-icons-png.flaticon.com/512/6533/6533065.png',
       // icon: <FaSeedling />,
-      buttonText: 'Learn More',
+      buttonText: 'Learn more',
       buttonLink: '/get-involved/donate',
     },
   ];
@@ -44,7 +44,7 @@ const GetInvolved = () => {
           color: '#3B173B',
         }}
       >
-        Get Involved
+        Get involved
       </Typography>
 
       {/* Section Description */}

@@ -10,10 +10,10 @@ const HeroSection = () => {
       sx={{
         position: 'relative',
         width: '100%',
-        height: '80vh',
+        height: '90vh',
         // backgroundImage: 'url("https://plus.unsplash.com/premium_photo-1723485760056-2b4f59326d6c?q=80&w=1827&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
         // backgroundImage: 'url("https://drive.google.com/file/d/19hsD_mc_f2tA6Qz8i7QuMiWo7UNfT2df/view?usp=sharing")',
-        backgroundImage : 'url("/images/Hero/BackgroundImage.jpg")',
+        backgroundImage : 'url("/images/Hero/BackgroundImage2.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: 'white',
@@ -55,7 +55,7 @@ const HeroSection = () => {
             color: '#FFF', 
           }}
         >
-          About Us
+          FULKOKA 
         </Typography>
         
         <Typography
@@ -67,7 +67,8 @@ const HeroSection = () => {
             fontSize: { xs: '1.2rem', md: '1.5rem' },
           }}
         >
-          Empowering communities for a healthier and sustainable future.
+          Transforming public health through awareness, advocacy & action
+
         </Typography>
 
         <Button
@@ -90,7 +91,7 @@ const HeroSection = () => {
           }}
         >
           {/* <FaLeaf style={{ marginRight: '8px' }} />  */}
-          Learn More
+          Learn more
         </Button>
       </Box>
     </Box>

@@ -68,6 +68,7 @@ export default function Navbar() {
               justifyContent: "center",
               alignItems: "center",
               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Subtle shadow
+              my:"10px",
             }}
           >
             <img
@@ -83,13 +84,18 @@ export default function Navbar() {
           <Typography
             variant="h6"
             sx={{
-              fontFamily: "'Playfair Display', serif",
+              fontFamily: "Georgia",
               color: "black",
               fontWeight: "bold",
+              fontSize: "28px"
             }}
           >
-            <Link href="/" passHref>
-              <Box sx={{ textDecoration: "none", color: "black" }}>Fulkoka</Box>
+            <Link href="/" sx={{
+              fontFamily: "Georgia",
+            }} passHref>
+              {/* <Box sx={{ textDecoration: "none", color: "black",  }}> */}
+                Fulkoka
+                {/* </Box> */}
             </Link>
           </Typography>
         </Box>

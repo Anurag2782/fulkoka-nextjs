@@ -22,7 +22,7 @@ const GetInvolvedPage = () => {
             fontSize: { xs: "2rem", md: "2.8rem" },
           }}
         >
-          Get Involved
+          Get involved
         </Typography>
         <Divider
           sx={{
@@ -90,7 +90,7 @@ const GetInvolvedPage = () => {
             fontSize: { xs: "1.8rem", md: "2.2rem" },
           }}
         >
-          Volunteer / Join Friends of Fulkoka Chapter
+          Volunteer / Join friends of fulkoka chapter
         </Typography>
         <Typography
           variant="body1"

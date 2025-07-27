@@ -9,238 +9,120 @@ import {
   TextField,
   Button,
 } from "@mui/material";
-import { Facebook, Twitter, LinkedIn, Instagram } from "@mui/icons-material";
+import { Facebook, LinkedIn, Instagram } from "@mui/icons-material";
+
+const footerStyle = {
+  backgroundColor: "#FFF8F0",
+  color: "black",
+  py: 4,
+  overflowX: "hidden",
+  fontFamily: "'Georgia', sans-serif",
+};
+
+const sectionTitleStyle = {
+  mb: 2,
+  fontWeight: "bold",
+  fontFamily: "'Georgia', serif",
+};
+
+const linkStyle = {
+  display: "block",
+  color: "black",
+  textDecoration: "none",
+  fontSize: "14px",
+  "&:hover": { textDecoration: "underline" },
+  fontFamily: "'Georgia', sans-serif",
+};
+
+const bodyTextStyle = {
+  fontSize: "14px",
+  lineHeight: 1.6,
+  fontFamily: "'Georgia', sans-serif",
+};
 
 const Footer = () => {
+  const quickLinks = [
+    { label: "Programs", href: "/programs" },
+    { label: "News & Media", href: "/news-media" },
+    { label: "Get Involved", href: "/get-involved" },
+    { label: "Donate", href: "/get-involved/donate" },
+    { label: "Contact us", href: "/contact" },
+  ];
+
+  const socialLinks = [
+    { icon: <Facebook />, href: "https://www.facebook.com/fulkoka06" },
+    { icon: <LinkedIn />, href: "https://www.linkedin.com/company/fulkoka-foundation/" },
+    { icon: <Instagram />, href: "https://www.instagram.com/fulkoka/" },
+  ];
+
   return (
-    <Box
-      sx={{
-        backgroundColor: "#FFF8F0",
-        color: "black",
-        py: 4,
-        mt: 0,
-        overflowX: "hidden",
-        fontFamily: "'Georgia', sans-serif", 
-      }}
-    >
+    <Box sx={footerStyle}>
       <Box sx={{ maxWidth: "1200px", margin: "0 auto", px: 2 }}>
         <Grid container spacing={4}>
           {/* Left Column - Logo and About Us */}
           <Grid item xs={12} sm={6} md={3}>
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: 2,
-              }}
-            >
+            <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
               <Box
                 sx={{
                   width: 50,
                   height: 50,
                   borderRadius: "50%",
-                  // backgroundColor: "black",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
+                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
                 }}
               >
                 <img
                   src="/images/navbar/Fulkoka-logo2.png"
                   alt="Fulkoka Logo"
-                  style={{ width: "100%", height: "100%" }} 
+                  style={{ width: "100%", height: "100%" }}
                 />
               </Box>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontFamily: "'Georgia', serif", // Georgia for the logo text
-                  color: "black",
-                  fontWeight: "bold",
-                }}
-              >
-                <Link href="/">
-                  <Box sx={{ textDecoration: "none", color: "black" }}>
-                    Fulkoka
-                  </Box>
-                </Link>
+              <Typography variant="h6" sx={{ fontFamily: "'Georgia', serif", fontWeight: "bold" }}>
+                <Link href="/" sx={{ textDecoration: "none", color: "black" }}>Fulkoka</Link>
               </Typography>
             </Box>
-
-            <Typography
-              sx={{
-                mt: 2,
-                fontSize: "14px",
-                lineHeight: 1.6,
-                fontFamily: "'Georgia', sans-serif", // Georgia for body text
-              }}
-            >
-              Empowering communities through programs focused on health,
-              education, and social justice.
+            <Typography sx={{ ...bodyTextStyle, mt: 2 }}>
+              Empowering communities through programs focused on health, education, and social justice.
             </Typography>
-            <Link
-              href="/about"
-              sx={{
-                display: "block",
-                mt: 1,
-                color: "black",
-                textDecoration: "none",
-                fontSize: "14px",
-                fontWeight: "medium",
-                "&:hover": { textDecoration: "underline" },
-                fontFamily: "'Georgia', sans-serif", // Georgia for links
-              }}
-            >
+            {/* <Link href="/about" sx={{ ...linkStyle, mt: 1, fontWeight: "medium" }}>
               About Us
-            </Link>
+            </Link> */}
           </Grid>
 
           {/* Middle Column - Quick Links */}
           <Grid item xs={12} sm={6} md={3}>
-            <Typography
-              variant="h6"
-              sx={{
-                mb: 2,
-                fontWeight: "bold",
-                fontFamily: "'Georgia', serif", // Georgia for section titles
-              }}
-            >
-              Quick Links
+            <Typography variant="h6" sx={sectionTitleStyle}>Quick links</Typography>
+            {quickLinks.map((link, index) => (
+              <Link key={index} href={link.href} sx={{ ...linkStyle, mb: 1 }}>
+                {link.label}
+              </Link>
+            ))}
+          </Grid>
+
+          {/* Right Column - Contact & Social Links */}
+          <Grid item xs={12} sm={6} md={3}>
+            <Typography variant="h6" sx={sectionTitleStyle}>Contact us</Typography>
+            <Typography sx={bodyTextStyle}>Email: fulkokango@gmail.com</Typography>
+            <Typography sx={{ ...bodyTextStyle, mt: 1 }}>
+              Address: Balbhadrapur, Navtol, Laheriasarai, Darbhanga, Bihar-846001
             </Typography>
+            <Typography variant="h6" sx={{ ...sectionTitleStyle, mt: 2 }}>Follow us</Typography>
             <Box>
-              {[
-                { label: "Programs", href: "/programs" },
-                { label: "News & Media", href: "/news-media" },
-                { label: "Get Involved", href: "/get-involved" },
-                { label: "Donate", href: "/get-involved/donate" },
-                { label: "Contact Us", href: "/contact" },
-              ].map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.href}
-                  sx={{
-                    display: "block",
-                    color: "black",
-                    textDecoration: "none",
-                    mb: 1,
-                    fontSize: "14px",
-                    "&:hover": { textDecoration: "underline" },
-                    fontFamily: "'Georgia', sans-serif", // Georgia for links
-                  }}
-                >
-                  {link.label}
+              {socialLinks.map((social, index) => (
+                <Link key={index} href={social.href} target="_blank" sx={{ mr: 1 }}>
+                  <IconButton sx={{ fontSize: "24px", color: "black", "&:hover": { color: "#FFD700" } }}>
+                    {social.icon}
+                  </IconButton>
                 </Link>
               ))}
             </Box>
           </Grid>
 
-          {/* Right Column - Contact & Social Links */}
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography
-              variant="h6"
-              sx={{
-                mb: 2,
-                fontWeight: "bold",
-                fontFamily: "'Georgia', serif", // Georgia for section titles
-              }}
-            >
-              Contact Us
-            </Typography>
-            <Box sx={{ mb: 2 }}>
-              <Typography
-                sx={{
-                  fontSize: "14px",
-                  lineHeight: 1.6,
-                  fontFamily: "'Georgia', sans-serif", // Georgia for body text
-                }}
-              >
-                Email: fulkokango@gmail.com
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: "14px",
-                  lineHeight: 1.6,
-                  fontFamily: "'Georgia', sans-serif", // Georgia for body text
-                }}
-              >
-                {/* Phone: +123-456-7890 */}
-              </Typography>
-              <Typography
-                sx={{
-                  mt: 1,
-                  fontSize: "14px",
-                  lineHeight: 1.6,
-                  fontFamily: "'Georgia', sans-serif", // Georgia for body text
-                }}
-              >
-                Address: Balbhadrapur, Navtol, Laheriasarai, Darbhanga,
-                Bihar-846001
-              </Typography>
-            </Box>
-            <Box>
-              <Typography
-                variant="h6"
-                sx={{
-                  mb: 1,
-                  fontWeight: "bold",
-                  fontFamily: "'Georgia', serif", // Georgia for section titles
-                }}
-              >
-                Follow Us
-              </Typography>
-              <Box>
-                {[
-                  {
-                    icon: <Facebook />,
-                    href: "https://www.facebook.com/fulkoka06",
-                  },
-                  // {
-                  //   icon: <Twitter />,
-                  //   href: "",
-                  // },
-                  {
-                    icon: <LinkedIn />,
-                    href: "https://www.linkedin.com/company/fulkoka-foundation/",
-                  },
-                  {
-                    icon: <Instagram />,
-                    href: "https://www.instagram.com/fulkoka/",
-                  },
-                ].map((social, index) => (
-                  <Link
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    sx={{ mr: 1 }}
-                  >
-                    <IconButton
-                      sx={{
-                        fontSize: "24px",
-                        color: "black",
-                        "&:hover": { color: "#FFD700" },
-                      }}
-                    >
-                      {social.icon}
-                    </IconButton>
-                  </Link>
-                ))}
-              </Box>
-            </Box>
-          </Grid>
-
           {/* Newsletter Signup */}
           <Grid item xs={12} sm={6} md={3}>
-            <Typography
-              variant="h6"
-              sx={{
-                mb: 2,
-                fontWeight: "bold",
-                fontFamily: "'Georgia', serif", // Georgia for section titles
-              }}
-            >
-              Newsletter Signup
-            </Typography>
+            <Typography variant="h6" sx={sectionTitleStyle}>Newsletter Sign up</Typography>
             <TextField
               fullWidth
               variant="outlined"
@@ -254,7 +136,7 @@ const Footer = () => {
                 "& input": {
                   padding: "10px",
                   color: "#1A73E8",
-                  fontFamily: "'Georgia', sans-serif", // Georgia for inputs
+                  fontFamily: "'Georgia', sans-serif",
                 },
               }}
             />
@@ -266,7 +148,7 @@ const Footer = () => {
                 color: "black",
                 fontWeight: "bold",
                 "&:hover": { backgroundColor: "#E8C300" },
-                fontFamily: "'Georgia', sans-serif", // Georgia for buttons
+                fontFamily: "'Georgia', sans-serif",
               }}
             >
               Subscribe
@@ -275,42 +157,14 @@ const Footer = () => {
         </Grid>
 
         {/* Footer Bottom Section */}
-        <Box
-          sx={{
-            mt: 3,
-            borderTop: "1px solid black",
-            pt: 2,
-            textAlign: "center",
-          }}
-        >
-          <Typography
-            variant="body2"
-            sx={{
-              color: "#bbb",
-              fontSize: "14px",
-              fontFamily: "'Georgia', sans-serif", // Georgia for body text
-            }}
-          >
+        <Box sx={{ mt: 3, borderTop: "1px solid black", pt: 2, textAlign: "center" }}>
+          <Typography variant="body2" sx={{ color: "#bbb", fontSize: "14px", fontFamily: "'Georgia', sans-serif" }}>
             © {new Date().getFullYear()} Fulkoka. All Rights Reserved.
           </Typography>
-          <Box sx={{ mt: 1 }}>
-            {[
-              { label: "Privacy Policy", href: "/" },
-              { label: "Terms of Service", href: "/" },
-            ].map((link, index) => (
-              <Link
-                key={index}
-                // href={link.href}
-                sx={{
-                  color: "black",
-                  textDecoration: "none",
-                  fontSize: "14px",
-                  mx: 1,
-                  "&:hover": { textDecoration: "underline" },
-                  fontFamily: "'Georgia', sans-serif", // Georgia for links
-                }}
-              >
-                {link.label}
+          <Box sx={{ mt: 1,display:"flex", justifyContent:"center" }}>
+            {["Privacy Policy", "Terms of Service"].map((label, index) => (
+              <Link key={index} href="/" sx={{ ...linkStyle, mx: 1 }}>
+                {label}
               </Link>
             ))}
           </Box>

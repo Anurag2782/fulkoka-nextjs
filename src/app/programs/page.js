@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Typography, Container, Divider, Link } from "@mui/material";
+import { Box, Typography, Container, Divider, Link, List, ListItem } from "@mui/material";
 import { FaHeartbeat, FaBookOpen, FaRecycle, FaHandsHelping } from "react-icons/fa";
 
 const ProgramsPage = () => {
@@ -23,7 +23,7 @@ const ProgramsPage = () => {
             fontSize: { xs: "2rem", md: "2.8rem" },
           }}
         >
-          Strategic Focus Areas
+           Focus areas
         </Typography>
         <Divider
           sx={{
@@ -35,7 +35,7 @@ const ProgramsPage = () => {
         />
       </Box>
 
-      <Box textAlign="center" mb={6}>
+      <Box textAlign="center" mb={3}>
         <Typography
           variant="body1"
           sx={{
@@ -47,6 +47,10 @@ const ProgramsPage = () => {
         >
           Transforming lives through education, health initiatives, and environmental sustainability.
         </Typography>
+      </Box>
+
+      <Box mb={3} sx={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+        <img src="/images/Programs/target2.png"  />
       </Box>
 
       <Box mb={{ xs: 4, md: 8 }}>
@@ -96,6 +100,191 @@ const ProgramsPage = () => {
 
       <Divider sx={{ my: 4, borderColor: "#C5A3C5" }} />
 
+      <Box mb={{ xs: 4, md: 8 }}>
+        <Typography
+          variant="h4"
+          sx={{
+            fontFamily: "Georgia",
+            fontWeight: "700",
+            color: "#3B173B",
+            mb: 2,
+            fontSize: { xs: "1.8rem", md: "2.2rem" },
+          }}
+        >
+          Community library & resource centre:
+        </Typography>
+        <Typography
+          variant="h5"
+          sx={{
+            fontFamily: "Georgia",
+            fontWeight: "700",
+            color: "#3B173B",
+            mb: 2,
+            fontSize: { xs: "1.6rem", md: "1.9rem" },
+          }}
+        >
+           Empowering learning in low-resource settings of bihar
+        </Typography>
+        <Typography
+          variant="h5"
+          sx={{
+            fontFamily: "Georgia",
+            fontWeight: "700",
+            color: "#3B173B",
+            mb: 2,
+            fontSize: { xs: "1.2rem", md: "1.4rem" },
+          }}
+        >
+          📖 Bridging the knowledge gap, one book at a time
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            color: "#000",
+            mb: 2,
+            fontSize: { xs: "1rem", md: "1.2rem" },
+            lineHeight: "1.8",
+            fontFamily: "Georgia",
+          }}
+        >
+          Education is the foundation of empowerment, yet in many parts of Bihar, access to quality learning resources remains a challenge. Limited availability of books, digital content, and study spaces often hinders learning opportunities, especially for students from marginalized communities.        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            color: "#000",
+            mb: 2,
+            fontSize: { xs: "1rem", md: "1.2rem" },
+            lineHeight: "1.8",
+            fontFamily: "Georgia",
+          }}
+        >
+          To address this, Fulkoka is launching a Community Library & Resource Centre—a safe, inclusive space where knowledge is accessible to all, regardless of socioeconomic background.
+        </Typography>
+      </Box>
+
+      <Divider sx={{ my: 4, borderColor: "#C5A3C5" }} />
+      <Box mb={{ xs: 4, md: 8 }}>
+        <Typography
+          variant="h4"
+          sx={{
+            fontFamily: "Georgia",
+            fontWeight: "700",
+            color: "#3B173B",
+            mb: 2,
+            fontSize: { xs: "1.8rem", md: "2.2rem" },
+          }}
+        >
+          📚 What is the community library & resource centre?
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            color: "#000",
+            mb: 2,
+            fontSize: { xs: "1rem", md: "1.2rem" },
+            lineHeight: "1.8",
+            fontFamily: "Georgia",
+          }}
+        >
+          The Community Library & Resource Centre (CLRC) is designed to be a hub for learning, creativity, and empowerment in low-resource settings. It aims to provide:
+        </Typography>
+        <ul
+        style={{
+          fontSize: "1.2rem",
+          lineHeight: "1.6",
+          color: "#000",
+          marginBottom: "2rem",
+          listStyle:"none",
+          listStyleType: "none",
+        }}
+        >
+          <li>✅ Access to books, newspapers, and digital resources</li>
+          <li>✅ A quiet, well-lit space for reading and studying</li>
+          <li>✅ Workshops on literacy, career guidance, and skill development</li>
+          <li>✅ Internet access and digital literacy training</li>
+          <li>✅ Special programs for children, youth, and women</li>
+        </ul>
+        <Typography
+          variant="body1"
+          sx={{
+            color: "#000",
+            mb: 2,
+            fontSize: { xs: "1rem", md: "1.2rem" },
+            lineHeight: "1.8",
+            fontFamily: "Georgia",
+          }}
+        >
+          By fostering a culture of reading and self-learning, we aim to break barriers and enable individuals to explore new opportunities for personal and community growth.
+        </Typography>
+      </Box>
+
+      <Divider sx={{ my: 4, borderColor: "#C5A3C5" }} />
+
+      <Box mb={{ xs: 4, md: 8 }}>
+        <Typography
+          variant="h4"
+          sx={{
+            fontFamily: "Georgia",
+            fontWeight: "700",
+            color: "#3B173B",
+            mb: 2,
+            fontSize: { xs: "1.8rem", md: "2.2rem" },
+          }}
+        >
+          🌍 Why community libraries
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            color: "#000",
+            // mb: 2,
+            fontSize: { xs: "1rem", md: "1.2rem" },
+            lineHeight: "1.8",
+            fontFamily: "Georgia",
+          }}
+        >
+          🔹 High dropout rates: Many students discontinue education due to lack of learning materials.
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            color: "#000",
+            // mb: 2,
+            fontSize: { xs: "1rem", md: "1.2rem" },
+            lineHeight: "1.8",
+            fontFamily: "Georgia",
+          }}
+        >
+          🔹 Limited access to educational resources: Rural areas have few public libraries or resource centers.
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            color: "#000",
+            // mb: 2,
+            fontSize: { xs: "1rem", md: "1.2rem" },
+            lineHeight: "1.8",
+            fontFamily: "Georgia",
+          }}
+        >
+          🔹 Digital divide: Many children and youth lack access to online learning tools.
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            color: "#000",
+            mb: 2,
+            fontSize: { xs: "1rem", md: "1.2rem" },
+            lineHeight: "1.8",
+            fontFamily: "Georgia",
+          }}
+        >
+          🔹 Skill gap: Absence of career counseling and vocational training restricts job opportunities.
+        </Typography>
+      </Box>
+
+      <Divider sx={{ my: 4, borderColor: "#C5A3C5" }} />
+
       <Box mb={{ xs: 4, md: 8 }} mt={{ xs: 4, md: 8 }}>
         <Typography
           variant="h4"
@@ -107,7 +296,7 @@ const ProgramsPage = () => {
             fontSize: { xs: "1.8rem", md: "2.2rem" },
           }}
         >
-          Public Health
+          Public health
         </Typography>
 
         <Typography
@@ -120,7 +309,7 @@ const ProgramsPage = () => {
             fontSize: { xs: "1.6rem", md: "1.9rem" },
           }}
         >
-          Mental Health & Non-Communicable Diseases
+          Mental health & non-communicable diseases
         </Typography>
         <Typography
           variant="body1"
@@ -162,7 +351,7 @@ const ProgramsPage = () => {
             fontSize: { xs: "1.6rem", md: "1.9rem" },
           }}
         >
-          Understanding the Commercial Determinants of Health
+          Understanding the commercial determinants of health
         </Typography>
         <Typography
           variant="body1"
@@ -184,17 +373,17 @@ const ProgramsPage = () => {
             }}
           >
             <li>
-              <strong>Marketing and Advertising:</strong> Aggressive promotion of unhealthy products like sugary drinks, ultra-processed foods, and tobacco.
+              <strong>Marketing and advertising:</strong> Aggressive promotion of unhealthy products like sugary drinks, ultra-processed foods, and tobacco.
             </li>
             <li>
-              <strong>Policy Influence:</strong> Lobbying to weaken public health regulations, such as taxes on sugary drinks or restrictions on alcohol advertising.
+              <strong>Policy influence:</strong> Lobbying to weaken public health regulations, such as taxes on sugary drinks or restrictions on alcohol advertising.
             </li>
             <li>
-              <strong>Product Accessibility and Pricing:</strong> Ensuring affordability and wide availability of unhealthy products.
+              <strong>Product accessibility and pricing:</strong> Ensuring affordability and wide availability of unhealthy products.
             </li>
-            <li>
-              <strong>Corporate Social Responsibility:</strong> Tactics to improve public perception while deflecting attention from negative health impacts.
-            </li>
+            {/* <li>
+              <strong>Corporate social responsibility:</strong> Tactics to improve public perception while deflecting attention from negative health impacts.
+            </li> */}
           </ul>
         </Box>
 
@@ -224,7 +413,7 @@ const ProgramsPage = () => {
             fontSize: { xs: "1.8rem", md: "2.2rem" },
           }}
         >
-          Environment, Climate Change, and Health
+          Environment, climate change and health
         </Typography>
         <Typography
           variant="body1"

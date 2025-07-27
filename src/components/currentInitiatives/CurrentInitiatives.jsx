@@ -8,19 +8,21 @@ import { FaSeedling, FaHandshake, FaHeart } from 'react-icons/fa'; // Icons for 
 const CurrentInitiatives = () => {
   const initiatives = [
     {
-      title: 'Mental Health Awareness',
+      title: 'Mental health awareness',
       description: 'Raising awareness and providing resources for mental health care across communities.',
-      image: 'https://img.freepik.com/free-vector/mental-health-awareness-concept_23-2148514643.jpg',
+      // image: 'https://img.freepik.com/free-vector/mental-health-awareness-concept_23-2148514643.jpg',
+      image: 'images/Others/MentalHealth.jpg',
       // icon: <FaHeart />,
-      buttonText: 'Get Involved',
+      buttonText: 'Get involved',
       buttonLink: '/get-involved',
     },
     {
-      title: 'Environmental Sustainability',
+      title: 'Environmental sustainability',
       description: 'Promoting greener and more sustainable practices for a cleaner future.',
-      image: 'https://th.bing.com/th/id/OIP.k99JMRreLIAWiDtj-bzT5gAAAA?rs=1&pid=ImgDetMain',
+      // image: 'https://th.bing.com/th/id/OIP.k99JMRreLIAWiDtj-bzT5gAAAA?rs=1&pid=ImgDetMain',
+      image: 'images/Others/Environment.jpg',
       // icon: <FaSeedling />,
-      buttonText: 'Donate Now',
+      buttonText: 'Donate now',
       buttonLink: '/get-involved/donate',
     },
     // {
@@ -46,7 +48,7 @@ const CurrentInitiatives = () => {
           color: '#3B173B', // Consistent color scheme
         }}
       >
-        Our Current Initiatives
+        Our current initiatives
       </Typography>
 
       {/* Initiatives Description */}

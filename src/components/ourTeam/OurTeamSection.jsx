@@ -1,78 +1,86 @@
-import { Box, Grid, Typography, Card, CardContent, Avatar } from "@mui/material";
+"use client";
+import React from "react";
+import { Box, Typography, Container } from "@mui/material";
 
 const teamMembers = [
   {
     name: "Bhawesh Jha",
-    role: "Founder",
-    image: "/images/team/bhawesh-jha.jpg",
+    title: "Founder",
     description:
-      "Bhawesh Jha, founder of Fulkoka (2023), is a Project & Policy Officer at the University of Edinburgh. With experience in mental health policy in India, particularly in Bihar, he advocates for integrating social services like livelihoods and disability benefits into mental health care.",
+      "Bhawesh Jha, founder of Fulkoka (2023), is a Project & Policy Officer at the University of Edinburgh. With experience in mental health policy in India, particularly in Bihar, he advocates for integrating social services like livelihoods and disability benefits into mental health care.\n\nHe has worked with the National Tele Mental Health Programme in collaboration with National Institute of Mental Health and Neuro-Sciences and IIIT, Bangalore, Mariwala Health Initiative, NHSRC, and ICMR. A member of the State Mental Health Authority, Bihar, his interests include suicide prevention, mental health systems, disability, and law. Bhawesh holds a master’s degree in Health Administration from TISS, Mumbai.",
   },
   {
     name: "Kartik Joya",
-    role: "Director (Media & Communications)",
-    image: "/images/team/kartik-joya.jpg",
+    title: "Director (Media & Communications)",
     description:
-      "Kartik Joya, co-founder of Fulkoka (2023), is an independent filmmaker and media strategist specializing in creating impactful narratives and enhancing content for creators and organizations.",
+      "Kartik Joya, co-founder of Fulkoka (2023), is an independent filmmaker and media strategist specializing in creating impactful narratives and enhancing content for creators and organizations. With a background in Media and Culture Studies from TISS Mumbai, Kartik brings a wealth of expertise in media production, strategic communication, and advocacy.\n\nKartik has a proven ability to empower others to tell compelling stories, combining creativity and strategy to drive meaningful engagement.",
   },
   {
     name: "Dr. Sriram Subrahmanyan Swamy",
-    role: "Director & Co-Founder",
-    image: "/images/team/sriram-swamy.jpg",
+    title: "Director & Co-Founder",
     description:
-      "Dr. Sriram Subrahmanyan Swamy, Co-Founder of Fulkoka Foundation, is currently serving as a Senior public health specialist at Tata Steel UISL, focusing on communicable diseases and public health initiatives.",
+      "Dr. Sriram Subrahmanian Swamy, Co-Founder of Fulkoka Foundation, is currently serving as a Senior public health specialist at Public health division of Tata Steel UISL. With extensive experience across leading organizations such as ICMR (Indian Council of Medical Research), WHO (World Health Organisation), and MSF (Doctors Without Borders), he has worked in diverse public health domains, focusing on communicable diseases like tuberculosis and HIV, vaccine-preventable illnesses, and vector-borne diseases such as dengue and chikungunya.\n\nDr. Sriram brings a wealth of expertise in program operations and implementation, with a strong emphasis on field operations and impactful communication.",
   },
 ];
 
-export default function OurTeam() {
+const OurTeam = () => {
   return (
-    <Box sx={{ py: 8, px: 4, backgroundColor: "#f9f9f9" }}>
+    <Box sx={{m:0,px:0, py: 5, fontFamily: "Georgia, serif" }}>
       <Typography
         variant="h4"
-        align="center"
-        gutterBottom
-        sx={{ fontWeight: "bold", color: "#4B134F" }}
+        sx={{
+          fontFamily: "Georgia",
+          fontWeight: "700",
+          color: "#3B173B",
+          mb: 2,
+          fontSize: { xs: "1.8rem", md: "2.2rem" },
+        }}
       >
-        Our Team
+        Our team
       </Typography>
-      <Grid container spacing={4} justifyContent="center">
+      <Box>
         {teamMembers.map((member, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card
+          <Box key={index} sx={{ mb: 4 }}>
+            <Typography
+              variant="h5"
               sx={{
-                borderRadius: "12px",
-                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-                textAlign: "center",
+                fontFamily: "Georgia",
+                fontWeight: "700",
+                color: "#3B173B", // Dark plum
+                mb: 2,
               }}
             >
-              <CardContent>
-                <Avatar
-                  src={member.image}
-                  alt={member.name}
-                  sx={{
-                    width: 100,
-                    height: 100,
-                    margin: "0 auto",
-                    mb: 2,
-                  }}
-                />
-                <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-                  {member.name}
-                </Typography>
-                <Typography variant="subtitle1" color="text.secondary">
-                  {member.role}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{ mt: 2, fontSize: "0.9rem", color: "#555" }}
-                >
-                  {member.description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
+              {member.name}
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              sx={{
+                fontStyle: "italic",
+                color: "#555",
+                fontFamily: "Georgia, serif",
+                fontSize: { xs: "1rem", md: "1.2rem" },
+                lineHeight: "1.8",
+              }}
+            >
+              {member.title}
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                color: "#000",
+                mb: 2,
+                fontSize: { xs: "1rem", md: "1.2rem" },
+                lineHeight: "1.8",
+                fontFamily: "Georgia",
+              }}
+            >
+              {member.description}
+            </Typography>
+          </Box>
         ))}
-      </Grid>
+      </Box>
     </Box>
   );
-}
+};
+
+export default OurTeam;
