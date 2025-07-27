@@ -21,6 +21,12 @@ const teamMembers = [
     description:
       "Dr. Sriram Subrahmanian Swamy, Co-Founder of Fulkoka Foundation, is currently serving as a Senior public health specialist at Public health division of Tata Steel UISL. With extensive experience across leading organizations such as ICMR (Indian Council of Medical Research), WHO (World Health Organisation), and MSF (Doctors Without Borders), he has worked in diverse public health domains, focusing on communicable diseases like tuberculosis and HIV, vaccine-preventable illnesses, and vector-borne diseases such as dengue and chikungunya.\n\nDr. Sriram brings a wealth of expertise in program operations and implementation, with a strong emphasis on field operations and impactful communication.",
   },
+  {
+    name: "Anurag Labh Aman",
+    title: "Collaborator",
+    description:
+      "Anurag Labh Aman, a Research Scholar at NITK Surathkal, where his research focuses on the effects of climate change on water resources and river management. Mr. Anurag strongly believes in the power of science to drive social change and works closely with NGOs to translate research into community-based solutions. His interest in setting up science labs in remote areas stems from a desire to make scientific education accessible to all, fostering a culture of innovation and sustainability in rural communities. By integrating sustainability education with practical experimentation, he aims to cultivate scientific curiosity and empower marginalized communities to address local challenges.",
+  },
 ];
 
 const OurTeam = () => {
